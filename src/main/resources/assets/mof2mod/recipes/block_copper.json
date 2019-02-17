@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":[
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key":{
+    "X":{
+      "item": "mof2mod:ingot_copper"
+    }
+  },
+  "result": {
+    "item": "mof2mod:block_copper"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "stage=0,variant=maple": { "model": "mof2mod:sapling_maple"},
+    "stage=1,variant=maple": { "model": "mof2mod:sapling_maple"}
+  }
+}

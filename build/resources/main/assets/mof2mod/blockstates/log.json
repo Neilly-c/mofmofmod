@@ -1,0 +1,8 @@
+{
+  "variants":{
+    "axis=y,variant=maple": { "model": "mof2mod:log_maple"},
+    "axis=z,variant=maple": { "model": "mof2mod:log_maple", "x": 90},
+    "axis=x,variant=maple": { "model": "mof2mod:log_maple", "x": 90, "y": 90},
+    "axis=none,variant=maple": { "model": "mof2mod:log_maple"}
+  }
+}

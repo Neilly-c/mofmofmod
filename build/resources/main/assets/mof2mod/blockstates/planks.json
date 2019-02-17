@@ -1,0 +1,5 @@
+{
+  "variants":{
+    "variant=maple": { "model" : "mof2mod:planks_maple"}
+  }
+}

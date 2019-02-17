@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":[
+    "X X",
+    "XXX",
+    "XXX"
+  ],
+  "key":{
+    "X":{
+      "item": "mof2mod:ingot_tin"
+    }
+  },
+  "result": {
+    "item": "mof2mod:chestplate_tin"
+  }
+}

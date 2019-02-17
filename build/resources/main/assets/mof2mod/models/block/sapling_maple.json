@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "mof2mod:blocks/sapling_maple"
+  }
+}

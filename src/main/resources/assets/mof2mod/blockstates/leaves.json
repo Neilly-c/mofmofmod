@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "check_decay=true,decayable=true,variant=maple": { "model": "mof2mod:leaves_maple"},
+    "check_decay=true,decayable=false,variant=maple": { "model": "mof2mod:leaves_maple"},
+    "check_decay=false,decayable=true,variant=maple": { "model": "mof2mod:leaves_maple"},
+    "check_decay=false,decayable=false,variant=maple": { "model": "mof2mod:leaves_maple"}
+  }
+}

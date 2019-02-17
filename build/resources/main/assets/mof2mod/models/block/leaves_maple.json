@@ -1,0 +1,6 @@
+{
+  "parent": "block/leaves",
+  "textures":{
+    "all": "mof2mod:blocks/leaves_maple"
+  }
+}

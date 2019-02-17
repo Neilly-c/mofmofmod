@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.yourname.modid.mofmofmod.iml" filepath="$PROJECT_DIR$/.idea/modules/com.yourname.modid.mofmofmod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.yourname.modid.mofmofmod.api.iml" filepath="$PROJECT_DIR$/.idea/modules/com.yourname.modid.mofmofmod.api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.yourname.modid.mofmofmod.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.yourname.modid.mofmofmod.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.yourname.modid.mofmofmod.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.yourname.modid.mofmofmod.test.iml" />
+    </modules>
+  </component>
+</project>
