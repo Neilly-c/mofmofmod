@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=true": {
+      "model": "mof2mod:water_remover_on"
+    },
+    "powered=false": {
+      "model": "mof2mod:water_remover"
+    }
+  }
+}

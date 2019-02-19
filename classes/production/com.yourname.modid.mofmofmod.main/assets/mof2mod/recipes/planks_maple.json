@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":[
+    "X"
+  ],
+  "key":{
+    "X": {
+      "item": "mof2mod:log_maple"
+    }
+  },
+  "result": {
+    "item": "mof2mod:planks_maple",
+    "count": 4
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":[
+    "XXX",
+    " Y ",
+    " Y "
+  ],
+  "key":{
+    "Y":{
+      "item": "minecraft:stick"
+    },
+    "X":{
+      "item": "mof2mod:ingot_tin"
+    }
+  },
+  "result": {
+    "item": "mof2mod:pickaxe_tin"
+  }
+}

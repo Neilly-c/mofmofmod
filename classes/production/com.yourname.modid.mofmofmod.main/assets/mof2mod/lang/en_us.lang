@@ -1,0 +1,72 @@
+
+item.nui.name=Nui
+item.water_mill.name=Water Mill
+item.water_remover.name=Water Remover
+
+item.ingot_copper.name=Copper Ingot
+item.ingot_tin.name=Tin Ingot
+item.ingot_aluminium.name=Aluminium Ingot
+item.ingot_lead.name=Lead Ingot
+item.ingot_silver.name=Silver Ingot
+item.ingot_iridium.name=Iridium Ingot
+item.ingot_platinum.name=Platinum Ingot
+item.ingot_bronze.name=Bronze Ingot
+item.ingot_steel.name=Steel Ingot
+
+item.breaker_iron.name=Iron Breaker
+item.placer.name=Block Placer
+
+item.axe_copper.name=Copper Axe
+item.hoe_copper.name=Copper Hoe
+item.pickaxe_copper.name=Copper Pickaxe
+item.spade_copper.name=Copper Shovel
+item.sword_copper.name=Copper Sword
+
+item.axe_tin.name=Tin Axe
+item.hoe_tin.name=Tin Hoe
+item.pickaxe_tin.name=Tin Pickaxe
+item.spade_tin.name=Tin Shovel
+item.sword_tin.name=Tin Sword
+
+item.helmet_copper.name=Copper Helmet
+item.chestplate_copper.name=Copper Chestplate
+item.leggings_copper.name=Copper Leggings
+item.boots_copper.name=Copper Boots
+
+item.helmet_tin.name=Tin Helmet
+item.chestplate_tin.name=Tin Chestplate
+item.leggings_tin.name=Tin Leggings
+item.boots_tin.name=Tin Boots
+
+tile.block_copper.name=Copper Block
+tile.ore_copper.name=Copper Ore
+tile.block_tin.name=Tin Block
+tile.ore_tin.name=Tin Ore
+tile.block_aluminium.name=Aluminium Block
+tile.ore_aluminium.name=Aluminium Ore
+tile.block_lead.name=Lead Block
+tile.ore_lead.name=Lead Ore
+tile.block_silver.name=Silver Block
+tile.ore_silver.name=Silver Ore
+tile.block_iridium.name=Iridium Block
+tile.ore_iridium.name=Iridium Ore
+tile.block_platinum.name=Platinum Block
+tile.ore_platinum.name=Platinum Ore
+tile.block_steel.name=Steel Block
+tile.block_bronze.name=Bronze Block
+
+tile.log_maple.name=Maple Log
+tile.planks_maple.name=Maple Plank
+tile.sapling_maple.name=Maple Sapling
+tile.leaves_maple.name=Maple Leaves
+
+entity.nui.name=Nui
+entity.water_mill.name=Water Mill
+
+enchantment.wander=Wander
+enchantment.glowing=Glowing
+enchantment.sweet_dream=Sweet Dream
+enchantment.hawkeye=Hawkeye
+enchantment.absolute=Absolute
+
+tile.NuiBed.notification=This is a nuibed!

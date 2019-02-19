@@ -13,7 +13,6 @@ import net.minecraft.tileentity.TileEntityLockable;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.ITickable;
 import net.minecraft.util.NonNullList;
-import net.minecraftforge.items.wrapper.SidedInvWrapper;
 
 import static net.minecraft.tileentity.TileEntityFurnace.isItemFuel;
 
@@ -21,16 +20,12 @@ public class TileEntityMultiFurnace extends TileEntityLockable implements ITicka
     private static final int[] SLOTS_TOP = new int[] {0, 1};
     private static final int[] SLOTS_BOTTOM = new int[] {1, 2};
     private static final int[] SLOTS_SIDES = new int[] {3};
-    private NonNullList<ItemStack> furnaceItemStacks;
+    private NonNullList<ItemStack> furnaceItemStacks = NonNullList.withSize(4, ItemStack.EMPTY);
     private int furnaceBurnTime;
     private int currentItemBurnTime;
     private int cookTime;
     private int totalCookTime;
     private String furnaceCustomName;
-
-    public TileEntityMultiFurnace() {
-        this.furnaceItemStacks = NonNullList.withSize(4, ItemStack.EMPTY);
-    }
 
     public int getCookTime(ItemStack stack) {
         return 200;
@@ -210,5 +205,9 @@ public class TileEntityMultiFurnace extends TileEntityLockable implements ITicka
     @Override
     public boolean hasCustomName() {
         return this.furnaceCustomName != null && !this.furnaceCustomName.isEmpty();
+    }
+
+    public void setCustomInventoryName(String displayName) {
+        this.furnaceCustomName = displayName;
     }
 }

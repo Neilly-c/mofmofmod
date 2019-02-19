@@ -9,4 +9,5 @@ public class Reference {
 
     public static final int ENTITY_NUI = 120;
     public static final int ENTITY_WATER_MILL = 121;
+    public static final int GUI_MULTI_FURNACE = 0;
 }

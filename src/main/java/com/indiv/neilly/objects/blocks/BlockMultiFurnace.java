@@ -1,16 +1,21 @@
 package com.indiv.neilly.objects.blocks;
 
+import com.indiv.neilly.Main;
 import com.indiv.neilly.entity.TileEntityMultiFurnace;
 import com.indiv.neilly.init.BlockInit;
 import com.indiv.neilly.util.IHasFacing;
+import com.indiv.neilly.util.Reference;
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.stats.StatList;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntityFurnace;
@@ -19,6 +24,7 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
+import javax.annotation.Nullable;
 import java.util.Random;
 
 public class BlockMultiFurnace extends BlockMachine implements ITileEntityProvider, IHasFacing {
@@ -71,7 +77,7 @@ public class BlockMultiFurnace extends BlockMachine implements ITileEntityProvid
             TileEntity tileentity = worldIn.getTileEntity(pos);
 
             if (tileentity instanceof TileEntityMultiFurnace) {
-                playerIn.displayGUIChest((TileEntityMultiFurnace)tileentity);
+                playerIn.openGui(Main.instance, Reference.GUI_MULTI_FURNACE, worldIn, pos.getX(), pos.getY(), pos.getZ());
                 playerIn.addStat(StatList.FURNACE_INTERACTION);
             }
             return true;
@@ -96,5 +102,36 @@ public class BlockMultiFurnace extends BlockMachine implements ITileEntityProvid
     public BlockStateContainer createBlockState()
     {
         return new BlockStateContainer(this, new IProperty[] {FACING});
+    }
+
+    @Nullable
+    @Override
+    public TileEntity createNewTileEntity(World worldIn, int meta) {
+        return new TileEntityMultiFurnace();
+    }
+
+    public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer) {
+        return this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
+    }
+
+
+    public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) {
+        worldIn.setBlockState(pos, state.withProperty(FACING, placer.getHorizontalFacing().getOpposite()), 2);
+
+        if (stack.hasDisplayName()) {
+            TileEntity tileentity = worldIn.getTileEntity(pos);
+            if (tileentity instanceof TileEntityMultiFurnace) {
+                ((TileEntityMultiFurnace)tileentity).setCustomInventoryName(stack.getDisplayName());
+            }
+        }
+    }
+
+    public void breakBlock(World worldIn, BlockPos pos, IBlockState state) {
+        TileEntity tileentity = worldIn.getTileEntity(pos);
+        if (tileentity instanceof TileEntityMultiFurnace) {
+            InventoryHelper.dropInventoryItems(worldIn, pos, (TileEntityMultiFurnace)tileentity);
+            worldIn.updateComparatorOutputLevel(pos, this);
+        }
+        super.breakBlock(worldIn, pos, state);
     }
 }
