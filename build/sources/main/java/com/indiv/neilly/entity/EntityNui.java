@@ -38,7 +38,7 @@ public class EntityNui extends EntityAnimal {
     private static final DataParameter<Integer> TARGET_ENTITY = EntityDataManager.<Integer>createKey(EntityNui.class, DataSerializers.VARINT);
     private static final DataParameter<BlockPos> NUILIGHT_LOCATION = EntityDataManager.<BlockPos>createKey(EntityNui.class, DataSerializers.BLOCK_POS);
     private static final DataParameter<Integer> LEVEL_ENCHANT_WANDER = EntityDataManager.<Integer>createKey(EntityNui.class, DataSerializers.VARINT);
-    private static final DataParameter<Boolean> IS_ENCHANT_GLOWING = EntityDataManager.<Boolean>createKey(EntityNui.class, DataSerializers.BOOLEAN);
+    private static final DataParameter<Integer> IS_ENCHANT_GLOWING = EntityDataManager.<Integer>createKey(EntityNui.class, DataSerializers.VARINT);
     private static final DataParameter<Integer> LEVEL_ENCHANT_SWEET_DREAM = EntityDataManager.<Integer>createKey(EntityNui.class, DataSerializers.VARINT);
     private static final DataParameter<Integer> LEVEL_ENCHANT_HAWKEYE = EntityDataManager.<Integer>createKey(EntityNui.class, DataSerializers.VARINT);
     private static final DataParameter<Integer> LEVEL_ENCHANT_POWER = EntityDataManager.<Integer>createKey(EntityNui.class, DataSerializers.VARINT);
@@ -70,8 +70,8 @@ public class EntityNui extends EntityAnimal {
         this.dataManager.set(LEVEL_ENCHANT_WANDER, level);
     }
 
-    public void setEnchantmentGlowing(boolean flag){
-        this.dataManager.set(IS_ENCHANT_GLOWING, flag);
+    public void setEnchantmentGlowing(int time){
+        this.dataManager.set(IS_ENCHANT_GLOWING, time);
     }
 
     public void setEnchantmentSweetDream(int level){
@@ -121,7 +121,7 @@ public class EntityNui extends EntityAnimal {
         return this.dataManager.get(LEVEL_ENCHANT_WANDER);
     }
 
-    public boolean getGlowing(){
+    public int getGlowing(){
         return this.dataManager.get(IS_ENCHANT_GLOWING);
     }
 
@@ -161,7 +161,7 @@ public class EntityNui extends EntityAnimal {
     public void writeEntityToNBT(NBTTagCompound compound) {
         super.writeEntityToNBT(compound);
         compound.setInteger("levelEnchantWander", this.getWander());
-        compound.setBoolean("isEnchantGlowing", this.getGlowing());
+        compound.setInteger("isEnchantGlowing", this.getGlowing());
         compound.setInteger("levelEnchantSweetDream", this.getSweetDream());
         compound.setInteger("levelEnchantHawkeye", this.getHawkeye());
         compound.setInteger("levelEnchantPower", this.getPower());
@@ -177,7 +177,7 @@ public class EntityNui extends EntityAnimal {
     public void readEntityFromNBT(NBTTagCompound compound) {
         super.readEntityFromNBT(compound);
         this.setEnchantmentWander(compound.getInteger("levelEnchantWander"));
-        this.setEnchantmentGlowing(compound.getBoolean("isEnchantGlowing"));
+        this.setEnchantmentGlowing(compound.getInteger("isEnchantGlowing"));
         this.setEnchantmentSweetDream(compound.getInteger("levelEnchantSweetDream"));
         this.setEnchantmentHawkeye(compound.getInteger("levelEnchantHawkeye"));
         this.setEnchantmentPower(compound.getInteger("levelEnchantPower"));
@@ -205,13 +205,13 @@ public class EntityNui extends EntityAnimal {
 
     @Override
     public float getBrightness() {
-        return this.getGlowing() ? 1.0F : super.getBrightness();
+        return this.getGlowing() >= 0 ? 1.0F : super.getBrightness();
     }
 
     protected void entityInit() {
         super.entityInit();
         this.dataManager.register(LEVEL_ENCHANT_WANDER, 0);
-        this.dataManager.register(IS_ENCHANT_GLOWING, false);
+        this.dataManager.register(IS_ENCHANT_GLOWING, -1);
         this.dataManager.register(LEVEL_ENCHANT_SWEET_DREAM, 0);
         this.dataManager.register(LEVEL_ENCHANT_HAWKEYE, 0);
         this.dataManager.register(LEVEL_ENCHANT_POWER, 0);
@@ -258,7 +258,7 @@ public class EntityNui extends EntityAnimal {
                 itemstack.setStackDisplayName(this.getCustomNameTag());
             }
             int w = this.getWander();
-            boolean g = this.getGlowing();
+            boolean g = this.getGlowing() >= 0;
             int sd = this.getSweetDream();
             int h = this.getHawkeye();
             int p1 = this.getPower();
@@ -331,14 +331,18 @@ public class EntityNui extends EntityAnimal {
                 nuiDrop();
             }
         }
-        if(getGlowing()){
-            BlockPos nuiLoc = this.getNuilightPosition();
-            if (pos != nuiLoc && world.getBlockState(pos).getBlock() instanceof BlockAir) {
-                if (world.getBlockState(nuiLoc).getBlock() instanceof BlockAir) {
-                    world.setBlockToAir(nuiLoc);
+        if(getGlowing() != -1){
+            this.setEnchantmentGlowing(getGlowing() + 1);
+            if(getGlowing() > 20) {
+                BlockPos nuiLoc = this.getNuilightPosition();
+                if (pos != nuiLoc && world.getBlockState(pos).getBlock() instanceof BlockAir) {
+                    if (world.getBlockState(nuiLoc).getBlock() instanceof BlockAir) {
+                        world.setBlockToAir(nuiLoc);
+                    }
+                    world.setBlockState(pos, NUI_LIGHT);
+                    this.setNuilightLocation(pos);
                 }
-                world.setBlockState(pos, NUI_LIGHT);
-                this.setNuilightLocation(pos);
+                this.setEnchantmentGlowing(0);
             }
         }
     }

@@ -49,7 +49,7 @@ public class ItemNui extends Item implements IHasModel {
                 int levelEnchantPunch = EnchantmentHelper.getEnchantmentLevel(Enchantments.PUNCH, itemstack);
                 boolean isEnchantAbsolute = EnchantmentHelper.getEnchantmentLevel(EnchantInit.ENCHANT_ABSOLUTE, itemstack) == 1;
                 entityNui.setEnchantmentWander(levelEnchantWander);
-                entityNui.setEnchantmentGlowing(isEnchantGlowing);
+                entityNui.setEnchantmentGlowing(isEnchantGlowing? 0 : -1);
                 entityNui.setEnchantmentSweetDream(levelEnchantSweetDream);
                 entityNui.setEnchantmentHawkeye(levelEnchantHawkeye);
                 entityNui.setEnchantmentPower(levelEnchantPower);
