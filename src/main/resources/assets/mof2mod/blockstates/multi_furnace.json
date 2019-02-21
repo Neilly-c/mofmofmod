@@ -1,27 +1,27 @@
 {
   "variants": {
-    "facing=north, powered=false": {
+    "facing=north,powered=false": {
       "model": "mof2mod:multi_furnace"
     },
-    "facing=east, powered=false": {
+    "facing=east,powered=false": {
       "model": "mof2mod:multi_furnace", "y": 90
     },
-    "facing=south, powered=false": {
+    "facing=south,powered=false": {
       "model": "mof2mod:multi_furnace", "y": 180
     },
-    "facing=west, powered=false": {
+    "facing=west,powered=false": {
       "model": "mof2mod:multi_furnace", "y": 270
     },
-    "facing=north, powered=true": {
+    "facing=north,powered=true": {
       "model": "mof2mod:lit_multi_furnace"
     },
-    "facing=east, powered=true": {
+    "facing=east,powered=true": {
       "model": "mof2mod:lit_multi_furnace", "y": 90
     },
-    "facing=south, powered=true": {
+    "facing=south,powered=true": {
       "model": "mof2mod:lit_multi_furnace", "y": 180
     },
-    "facing=west, powered=true": {
+    "facing=west,powered=true": {
       "model": "mof2mod:lit_multi_furnace", "y": 270
     }
   }

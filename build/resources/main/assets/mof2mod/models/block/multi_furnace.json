@@ -1,5 +1,5 @@
 {
-  "parent": "block/oritenable",
+  "parent": "block/cube",
   "textures": {
     "up": "mof2mod:blocks/multi_furnace_top",
     "down": "mof2mod:blocks/machine",
