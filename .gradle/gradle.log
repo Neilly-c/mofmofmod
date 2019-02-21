@@ -27,181 +27,160 @@ This mapping 'snapshot_20171003' was designed for MC 1.12! Use at your own peril
 :extractUserdev UP-TO-DATE
 :getAssetIndex UP-TO-DATE
 :getAssets
-Current status: 22/1305   1%
-Current status: 41/1305   3%
-Current status: 61/1305   4%
-Current status: 87/1305   6%
-Current status: 107/1305   8%
-Current status: 146/1305   11%
-Current status: 208/1305   15%
-Current status: 274/1305   20%
-Current status: 358/1305   27%
-Current status: 436/1305   33%
-Current status: 505/1305   38%
-Current status: 572/1305   43%
-Current status: 642/1305   49%
-Current status: 722/1305   55%
-Current status: 783/1305   60%
-Current status: 848/1305   64%
-Current status: 928/1305   71%
-Current status: 995/1305   76%
+Current status: 266/1305   20%
 Current status: 1060/1305   81%
 Current status: 1067/1305   81%
-Current status: 1072/1305   82%
-Current status: 1080/1305   82%
-Current status: 1110/1305   85%
-Current status: 1149/1305   88%
-Current status: 1220/1305   93%
-Current status: 1289/1305   98%
+Current status: 1078/1305   82%
+Current status: 1202/1305   92%
 :makeStart
 :runClient
-[16:02:48] [main/INFO] [GradleStart]: Extra: []
-[16:02:48] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/Neilly_parfait/.gradle/caches/minecraft/assets, --assetIndex, 1.12, --accessToken{REDACTED}, --version, 1.12.2, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
-[16:02:49] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[16:02:49] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[16:02:49] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
-[16:02:49] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[16:02:49] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2768 for Minecraft 1.12.2 loading
-[16:02:49] [main/INFO] [FML]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_161, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jdk1.8.0_161\jre
-[16:02:49] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
-[16:02:49] [main/ERROR] [FML]: Full: C:\Users\Neilly_parfait\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar
-[16:02:49] [main/ERROR] [FML]: Trimmed: c:/users/neilly_parfait/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
-[16:02:50] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
-[16:02:50] [main/INFO] [FML]: Detected deobfuscated environment, loading log configs for colored console logs.
-2019-02-20 16:02:55,262 main WARN Disabling terminal, you're running in an unsupported environment.
-[16:02:55] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
-[16:02:55] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
-[16:02:55] [main/INFO] [FML]: Searching C:\Users\Neilly_parfait\Documents\mofmofmod\run\.\mods for mods
-[16:02:55] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
-[16:02:55] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
-[16:02:55] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
-[16:02:55] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[16:02:55] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[16:02:55] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[16:02:55] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[16:02:55] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[16:02:55] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[16:03:01] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
-[16:03:01] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[16:03:01] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[16:03:03] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[16:03:03] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
-[16:03:03] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
-[16:03:03] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
-[16:03:08] [main/INFO] [minecraft/Minecraft]: Setting user: Player819
-[16:03:23] [main/WARN] [minecraft/GameSettings]: Skipping bad option: lastServer:
-[16:03:23] [main/INFO] [minecraft/Minecraft]: LWJGL Version: 2.9.4
-[16:03:25] [main/INFO] [FML]: -- System Details --
+[20:10:31] [main/INFO] [GradleStart]: Extra: []
+[20:10:31] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/Neilly_parfait/.gradle/caches/minecraft/assets, --assetIndex, 1.12, --accessToken{REDACTED}, --version, 1.12.2, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[20:10:31] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[20:10:31] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[20:10:31] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[20:10:32] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[20:10:32] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2768 for Minecraft 1.12.2 loading
+[20:10:32] [main/INFO] [FML]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_161, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jdk1.8.0_161\jre
+[20:10:32] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
+[20:10:32] [main/ERROR] [FML]: Full: C:\Users\Neilly_parfait\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar
+[20:10:32] [main/ERROR] [FML]: Trimmed: c:/users/neilly_parfait/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
+[20:10:32] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[20:10:32] [main/INFO] [FML]: Detected deobfuscated environment, loading log configs for colored console logs.
+2019-02-21 20:10:34,540 main WARN Disabling terminal, you're running in an unsupported environment.
+[20:10:34] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
+[20:10:34] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
+[20:10:34] [main/INFO] [FML]: Searching C:\Users\Neilly_parfait\Documents\mofmofmod\run\.\mods for mods
+[20:10:34] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[20:10:34] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
+[20:10:34] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[20:10:34] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[20:10:34] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[20:10:34] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[20:10:34] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[20:10:34] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[20:10:34] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[20:10:37] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
+[20:10:37] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[20:10:37] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[20:10:38] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[20:10:38] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[20:10:38] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[20:10:38] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[20:10:40] [main/INFO] [minecraft/Minecraft]: Setting user: Player333
+[20:10:49] [main/WARN] [minecraft/GameSettings]: Skipping bad option: lastServer:
+[20:10:49] [main/INFO] [minecraft/Minecraft]: LWJGL Version: 2.9.4
+[20:10:51] [main/INFO] [FML]: -- System Details --
 Details:
 	Minecraft Version: 1.12.2
 	Operating System: Windows 10 (amd64) version 10.0
 	Java Version: 1.8.0_161, Oracle Corporation
 	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
-	Memory: 148729896 bytes (141 MB) / 382205952 bytes (364 MB) up to 1886912512 bytes (1799 MB)
+	Memory: 208436184 bytes (198 MB) / 426770432 bytes (407 MB) up to 1886912512 bytes (1799 MB)
 	JVM Flags: 0 total; 
 	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
 	FML: 
 	Loaded coremods (and transformers): 
 	GL info: ' Vendor: 'Intel' Version: '4.0.0 - Build 10.18.10.5059' Renderer: 'Intel(R) HD Graphics'
-[16:03:25] [main/INFO] [FML]: MinecraftForge v14.23.5.2768 Initialized
-[16:03:25] [main/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
-[16:03:25] [main/INFO] [FML]: Replaced 1036 ore ingredients
-[16:03:26] [main/INFO] [FML]: Searching C:\Users\Neilly_parfait\Documents\mofmofmod\run\.\mods for mods
-[16:03:29] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 571465996 nanos
-[16:03:30] [main/INFO] [FML]: Forge Mod Loader has identified 5 mods to load
-[16:03:32] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, mof2mod] at CLIENT
-[16:03:32] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, mof2mod] at SERVER
-[16:03:36] [main/INFO] [minecraft/SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Mof2 Mod
-[16:03:37] [main/INFO] [FML]: Processing ObjectHolder annotations
-[16:03:37] [main/INFO] [FML]: Found 1168 ObjectHolder annotations
-[16:03:37] [main/INFO] [FML]: Identifying ItemStackHolder annotations
-[16:03:37] [main/INFO] [FML]: Found 0 ItemStackHolder annotations
-[16:03:38] [main/INFO] [FML]: Configured a dormant chunk cache size of 0
-[16:03:38] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
-[16:03:39] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: UP_TO_DATE Target: null
-[16:03:39] [main/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `bed`, expected `mof2mod`. This could be a intended override, but in most cases indicates a broken mod.
-[16:03:39] [main/WARN] [FML]: ****************************************
-[16:03:39] [main/WARN] [FML]: * Invalid registration attempt for an Ore Dictionary item with name oreCopper has occurred. The registration has been denied to prevent crashes. The mod responsible for the registration needs to correct this.
-[16:03:39] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:660)
-[16:03:39] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:646)
-[16:03:39] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:645)
-[16:03:39] [main/WARN] [FML]: *  at com.indiv.neilly.util.handlers.OreDictionaryHandler.registerOreDictionary(OreDictionaryHandler.java:12)
-[16:03:39] [main/WARN] [FML]: *  at com.indiv.neilly.util.handlers.RegistryHandler.otherRegistries(RegistryHandler.java:63)
-[16:03:39] [main/WARN] [FML]: *  at com.indiv.neilly.Main.preInit(Main.java:32)...
-[16:03:39] [main/WARN] [FML]: ****************************************
-[16:03:39] [main/WARN] [FML]: ****************************************
-[16:03:39] [main/WARN] [FML]: * Invalid registration attempt for an Ore Dictionary item with name oreTin has occurred. The registration has been denied to prevent crashes. The mod responsible for the registration needs to correct this.
-[16:03:39] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:660)
-[16:03:39] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:646)
-[16:03:39] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:645)
-[16:03:39] [main/WARN] [FML]: *  at com.indiv.neilly.util.handlers.OreDictionaryHandler.registerOreDictionary(OreDictionaryHandler.java:13)
-[16:03:39] [main/WARN] [FML]: *  at com.indiv.neilly.util.handlers.RegistryHandler.otherRegistries(RegistryHandler.java:63)
-[16:03:39] [main/WARN] [FML]: *  at com.indiv.neilly.Main.preInit(Main.java:32)...
-[16:03:39] [main/WARN] [FML]: ****************************************
-[16:03:39] [main/WARN] [FML]: ****************************************
-[16:03:39] [main/WARN] [FML]: * Invalid registration attempt for an Ore Dictionary item with name oreAluminum has occurred. The registration has been denied to prevent crashes. The mod responsible for the registration needs to correct this.
-[16:03:39] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:660)
-[16:03:39] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:646)
-[16:03:39] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:645)
-[16:03:39] [main/WARN] [FML]: *  at com.indiv.neilly.util.handlers.OreDictionaryHandler.registerOreDictionary(OreDictionaryHandler.java:14)
-[16:03:39] [main/WARN] [FML]: *  at com.indiv.neilly.util.handlers.RegistryHandler.otherRegistries(RegistryHandler.java:63)
-[16:03:39] [main/WARN] [FML]: *  at com.indiv.neilly.Main.preInit(Main.java:32)...
-[16:03:39] [main/WARN] [FML]: ****************************************
-[16:03:39] [main/WARN] [FML]: ****************************************
-[16:03:39] [main/WARN] [FML]: * Invalid registration attempt for an Ore Dictionary item with name oreSilver has occurred. The registration has been denied to prevent crashes. The mod responsible for the registration needs to correct this.
-[16:03:39] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:660)
-[16:03:39] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:646)
-[16:03:39] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:645)
-[16:03:39] [main/WARN] [FML]: *  at com.indiv.neilly.util.handlers.OreDictionaryHandler.registerOreDictionary(OreDictionaryHandler.java:15)
-[16:03:39] [main/WARN] [FML]: *  at com.indiv.neilly.util.handlers.RegistryHandler.otherRegistries(RegistryHandler.java:63)
-[16:03:39] [main/WARN] [FML]: *  at com.indiv.neilly.Main.preInit(Main.java:32)...
-[16:03:39] [main/WARN] [FML]: ****************************************
-[16:03:39] [main/WARN] [FML]: ****************************************
-[16:03:39] [main/WARN] [FML]: * Invalid registration attempt for an Ore Dictionary item with name oreLead has occurred. The registration has been denied to prevent crashes. The mod responsible for the registration needs to correct this.
-[16:03:39] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:660)
-[16:03:39] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:646)
-[16:03:39] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:645)
-[16:03:39] [main/WARN] [FML]: *  at com.indiv.neilly.util.handlers.OreDictionaryHandler.registerOreDictionary(OreDictionaryHandler.java:16)
-[16:03:39] [main/WARN] [FML]: *  at com.indiv.neilly.util.handlers.RegistryHandler.otherRegistries(RegistryHandler.java:63)
-[16:03:39] [main/WARN] [FML]: *  at com.indiv.neilly.Main.preInit(Main.java:32)...
-[16:03:39] [main/WARN] [FML]: ****************************************
-[16:03:39] [main/WARN] [FML]: ****************************************
-[16:03:39] [main/WARN] [FML]: * Invalid registration attempt for an Ore Dictionary item with name oreIridium has occurred. The registration has been denied to prevent crashes. The mod responsible for the registration needs to correct this.
-[16:03:39] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:660)
-[16:03:39] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:646)
-[16:03:39] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:645)
-[16:03:39] [main/WARN] [FML]: *  at com.indiv.neilly.util.handlers.OreDictionaryHandler.registerOreDictionary(OreDictionaryHandler.java:17)
-[16:03:39] [main/WARN] [FML]: *  at com.indiv.neilly.util.handlers.RegistryHandler.otherRegistries(RegistryHandler.java:63)
-[16:03:39] [main/WARN] [FML]: *  at com.indiv.neilly.Main.preInit(Main.java:32)...
-[16:03:39] [main/WARN] [FML]: ****************************************
-[16:03:39] [main/WARN] [FML]: ****************************************
-[16:03:39] [main/WARN] [FML]: * Invalid registration attempt for an Ore Dictionary item with name orePlatinum has occurred. The registration has been denied to prevent crashes. The mod responsible for the registration needs to correct this.
-[16:03:39] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:660)
-[16:03:39] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:646)
-[16:03:39] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:645)
-[16:03:39] [main/WARN] [FML]: *  at com.indiv.neilly.util.handlers.OreDictionaryHandler.registerOreDictionary(OreDictionaryHandler.java:18)
-[16:03:39] [main/WARN] [FML]: *  at com.indiv.neilly.util.handlers.RegistryHandler.otherRegistries(RegistryHandler.java:63)
-[16:03:39] [main/WARN] [FML]: *  at com.indiv.neilly.Main.preInit(Main.java:32)...
-[16:03:39] [main/WARN] [FML]: ****************************************
-[16:03:39] [main/INFO] [FML]: Applying holder lookups
-[16:03:39] [main/INFO] [FML]: Holder lookups applied
-[16:03:40] [main/INFO] [FML]: Applying holder lookups
-[16:03:40] [main/INFO] [FML]: Holder lookups applied
-[16:03:40] [main/INFO] [FML]: Applying holder lookups
-[16:03:40] [main/INFO] [FML]: Holder lookups applied
-[16:03:40] [main/INFO] [FML]: Applying holder lookups
-[16:03:40] [main/INFO] [FML]: Holder lookups applied
-[16:03:40] [main/INFO] [FML]: Injecting itemstacks
-[16:03:40] [main/INFO] [FML]: Itemstack injection complete
-[16:03:49] [Sound Library Loader/INFO] [minecraft/SoundManager]: Starting up SoundSystem...
-[16:03:49] [Thread-5/INFO] [minecraft/SoundManager]: Initializing LWJGL OpenAL
-[16:03:49] [Thread-5/INFO] [minecraft/SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[16:03:52] [Thread-5/INFO] [minecraft/SoundManager]: OpenAL initialized.
-[16:03:52] [Sound Library Loader/INFO] [minecraft/SoundManager]: Sound engine started
-[16:04:02] [main/INFO] [FML]: Max texture size: 8192
-[16:04:04] [main/INFO] [minecraft/TextureMap]: Created: 512x512 textures-atlas
-[16:04:08] [main/ERROR] [FML]: Exception loading model for variant mof2mod:multi_furnace#facing=west for blockstate "mof2mod:multi_furnace[facing=west]"
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model mof2mod:multi_furnace#facing=west with loader VariantLoader.INSTANCE, skipping
+[20:10:51] [main/INFO] [FML]: MinecraftForge v14.23.5.2768 Initialized
+[20:10:51] [main/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
+[20:10:51] [main/INFO] [FML]: Replaced 1036 ore ingredients
+[20:10:52] [main/INFO] [FML]: Searching C:\Users\Neilly_parfait\Documents\mofmofmod\run\.\mods for mods
+[20:10:55] [main/INFO] [FML]: Forge Mod Loader has identified 5 mods to load
+[20:10:56] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, mof2mod] at CLIENT
+[20:10:56] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, mof2mod] at SERVER
+[20:10:56] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 749597169 nanos
+[20:10:57] [main/INFO] [minecraft/SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Mof2 Mod
+[20:10:58] [main/INFO] [FML]: Processing ObjectHolder annotations
+[20:10:58] [main/INFO] [FML]: Found 1168 ObjectHolder annotations
+[20:10:58] [main/INFO] [FML]: Identifying ItemStackHolder annotations
+[20:10:58] [main/INFO] [FML]: Found 0 ItemStackHolder annotations
+[20:10:58] [main/INFO] [FML]: Configured a dormant chunk cache size of 0
+[20:10:58] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[20:10:58] [main/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `bed`, expected `mof2mod`. This could be a intended override, but in most cases indicates a broken mod.
+[20:10:58] [main/WARN] [FML]: ****************************************
+[20:10:58] [main/WARN] [FML]: * Invalid registration attempt for an Ore Dictionary item with name oreCopper has occurred. The registration has been denied to prevent crashes. The mod responsible for the registration needs to correct this.
+[20:10:58] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:660)
+[20:10:58] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:646)
+[20:10:58] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:645)
+[20:10:58] [main/WARN] [FML]: *  at com.indiv.neilly.util.handlers.OreDictionaryHandler.registerOreDictionary(OreDictionaryHandler.java:12)
+[20:10:58] [main/WARN] [FML]: *  at com.indiv.neilly.util.handlers.RegistryHandler.otherRegistries(RegistryHandler.java:63)
+[20:10:58] [main/WARN] [FML]: *  at com.indiv.neilly.Main.preInit(Main.java:32)...
+[20:10:58] [main/WARN] [FML]: ****************************************
+[20:10:58] [main/WARN] [FML]: ****************************************
+[20:10:58] [main/WARN] [FML]: * Invalid registration attempt for an Ore Dictionary item with name oreTin has occurred. The registration has been denied to prevent crashes. The mod responsible for the registration needs to correct this.
+[20:10:58] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:660)
+[20:10:58] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:646)
+[20:10:58] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:645)
+[20:10:58] [main/WARN] [FML]: *  at com.indiv.neilly.util.handlers.OreDictionaryHandler.registerOreDictionary(OreDictionaryHandler.java:13)
+[20:10:58] [main/WARN] [FML]: *  at com.indiv.neilly.util.handlers.RegistryHandler.otherRegistries(RegistryHandler.java:63)
+[20:10:58] [main/WARN] [FML]: *  at com.indiv.neilly.Main.preInit(Main.java:32)...
+[20:10:58] [main/WARN] [FML]: ****************************************
+[20:10:58] [main/WARN] [FML]: ****************************************
+[20:10:58] [main/WARN] [FML]: * Invalid registration attempt for an Ore Dictionary item with name oreAluminum has occurred. The registration has been denied to prevent crashes. The mod responsible for the registration needs to correct this.
+[20:10:58] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:660)
+[20:10:58] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:646)
+[20:10:58] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:645)
+[20:10:58] [main/WARN] [FML]: *  at com.indiv.neilly.util.handlers.OreDictionaryHandler.registerOreDictionary(OreDictionaryHandler.java:14)
+[20:10:58] [main/WARN] [FML]: *  at com.indiv.neilly.util.handlers.RegistryHandler.otherRegistries(RegistryHandler.java:63)
+[20:10:58] [main/WARN] [FML]: *  at com.indiv.neilly.Main.preInit(Main.java:32)...
+[20:10:58] [main/WARN] [FML]: ****************************************
+[20:10:58] [main/WARN] [FML]: ****************************************
+[20:10:58] [main/WARN] [FML]: * Invalid registration attempt for an Ore Dictionary item with name oreSilver has occurred. The registration has been denied to prevent crashes. The mod responsible for the registration needs to correct this.
+[20:10:58] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:660)
+[20:10:58] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:646)
+[20:10:58] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:645)
+[20:10:58] [main/WARN] [FML]: *  at com.indiv.neilly.util.handlers.OreDictionaryHandler.registerOreDictionary(OreDictionaryHandler.java:15)
+[20:10:58] [main/WARN] [FML]: *  at com.indiv.neilly.util.handlers.RegistryHandler.otherRegistries(RegistryHandler.java:63)
+[20:10:58] [main/WARN] [FML]: *  at com.indiv.neilly.Main.preInit(Main.java:32)...
+[20:10:58] [main/WARN] [FML]: ****************************************
+[20:10:58] [main/WARN] [FML]: ****************************************
+[20:10:58] [main/WARN] [FML]: * Invalid registration attempt for an Ore Dictionary item with name oreLead has occurred. The registration has been denied to prevent crashes. The mod responsible for the registration needs to correct this.
+[20:10:58] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:660)
+[20:10:58] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:646)
+[20:10:58] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:645)
+[20:10:58] [main/WARN] [FML]: *  at com.indiv.neilly.util.handlers.OreDictionaryHandler.registerOreDictionary(OreDictionaryHandler.java:16)
+[20:10:58] [main/WARN] [FML]: *  at com.indiv.neilly.util.handlers.RegistryHandler.otherRegistries(RegistryHandler.java:63)
+[20:10:58] [main/WARN] [FML]: *  at com.indiv.neilly.Main.preInit(Main.java:32)...
+[20:10:58] [main/WARN] [FML]: ****************************************
+[20:10:58] [main/WARN] [FML]: ****************************************
+[20:10:58] [main/WARN] [FML]: * Invalid registration attempt for an Ore Dictionary item with name oreIridium has occurred. The registration has been denied to prevent crashes. The mod responsible for the registration needs to correct this.
+[20:10:58] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:660)
+[20:10:58] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:646)
+[20:10:58] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:645)
+[20:10:58] [main/WARN] [FML]: *  at com.indiv.neilly.util.handlers.OreDictionaryHandler.registerOreDictionary(OreDictionaryHandler.java:17)
+[20:10:58] [main/WARN] [FML]: *  at com.indiv.neilly.util.handlers.RegistryHandler.otherRegistries(RegistryHandler.java:63)
+[20:10:58] [main/WARN] [FML]: *  at com.indiv.neilly.Main.preInit(Main.java:32)...
+[20:10:58] [main/WARN] [FML]: ****************************************
+[20:10:58] [main/WARN] [FML]: ****************************************
+[20:10:58] [main/WARN] [FML]: * Invalid registration attempt for an Ore Dictionary item with name orePlatinum has occurred. The registration has been denied to prevent crashes. The mod responsible for the registration needs to correct this.
+[20:10:58] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:660)
+[20:10:58] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:646)
+[20:10:58] [main/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:645)
+[20:10:58] [main/WARN] [FML]: *  at com.indiv.neilly.util.handlers.OreDictionaryHandler.registerOreDictionary(OreDictionaryHandler.java:18)
+[20:10:58] [main/WARN] [FML]: *  at com.indiv.neilly.util.handlers.RegistryHandler.otherRegistries(RegistryHandler.java:63)
+[20:10:58] [main/WARN] [FML]: *  at com.indiv.neilly.Main.preInit(Main.java:32)...
+[20:10:58] [main/WARN] [FML]: ****************************************
+[20:10:58] [main/INFO] [FML]: Applying holder lookups
+[20:10:58] [main/INFO] [FML]: Holder lookups applied
+[20:10:58] [main/INFO] [FML]: Applying holder lookups
+[20:10:58] [main/INFO] [FML]: Holder lookups applied
+[20:10:58] [main/INFO] [FML]: Applying holder lookups
+[20:10:58] [main/INFO] [FML]: Holder lookups applied
+[20:10:59] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: UP_TO_DATE Target: null
+[20:10:59] [main/INFO] [FML]: Applying holder lookups
+[20:10:59] [main/INFO] [FML]: Holder lookups applied
+[20:10:59] [main/INFO] [FML]: Injecting itemstacks
+[20:10:59] [main/INFO] [FML]: Itemstack injection complete
+[20:11:07] [Sound Library Loader/INFO] [minecraft/SoundManager]: Starting up SoundSystem...
+[20:11:07] [Thread-5/INFO] [minecraft/SoundManager]: Initializing LWJGL OpenAL
+[20:11:07] [Thread-5/INFO] [minecraft/SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[20:11:13] [Thread-5/INFO] [minecraft/SoundManager]: OpenAL initialized.
+[20:11:13] [Sound Library Loader/INFO] [minecraft/SoundManager]: Sound engine started
+[20:11:20] [main/INFO] [FML]: Max texture size: 8192
+[20:11:22] [main/INFO] [minecraft/TextureMap]: Created: 512x512 textures-atlas
+[20:11:26] [main/ERROR] [FML]: Exception loading model for variant mof2mod:lit_multi_furnace#facing=west,powered=true for blockstate "mof2mod:lit_multi_furnace[facing=west,powered=true]"
+net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model mof2mod:lit_multi_furnace#facing=west,powered=true with loader VariantLoader.INSTANCE, skipping
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:161) ~[ModelLoaderRegistry.class:?]
 	at net.minecraftforge.client.model.ModelLoader.registerVariant(ModelLoader.java:235) ~[ModelLoader.class:?]
 	at net.minecraft.client.renderer.block.model.ModelBakery.loadBlock(ModelBakery.java:153) ~[ModelBakery.class:?]
@@ -229,8 +208,8 @@ Caused by: net.minecraft.client.renderer.block.model.ModelBlockDefinition$Missin
 	at net.minecraftforge.client.model.ModelLoader$VariantLoader.loadModel(ModelLoader.java:1175) ~[ModelLoader$VariantLoader.class:?]
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:157) ~[ModelLoaderRegistry.class:?]
 	... 21 more
-[16:04:08] [main/ERROR] [FML]: Exception loading blockstate for the variant mof2mod:multi_furnace#facing=west: 
-java.lang.Exception: Could not load model definition for variant mof2mod:multi_furnace
+[20:11:26] [main/ERROR] [FML]: Exception loading blockstate for the variant mof2mod:lit_multi_furnace#facing=west,powered=true: 
+java.lang.Exception: Could not load model definition for variant mof2mod:lit_multi_furnace
 	at net.minecraftforge.client.model.ModelLoader.getModelBlockDefinition(ModelLoader.java:269) ~[ModelLoader.class:?]
 	at net.minecraft.client.renderer.block.model.ModelBakery.loadBlock(ModelBakery.java:121) ~[ModelBakery.class:?]
 	at net.minecraftforge.client.model.ModelLoader.loadBlocks(ModelLoader.java:223) ~[ModelLoader.class:?]
@@ -252,20 +231,20 @@ java.lang.Exception: Could not load model definition for variant mof2mod:multi_f
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_161]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
 	at GradleStart.main(GradleStart.java:25) [start/:?]
-Caused by: java.lang.RuntimeException: Encountered an exception when loading model definition of model mof2mod:blockstates/multi_furnace.json
+Caused by: java.lang.RuntimeException: Encountered an exception when loading model definition of model mof2mod:blockstates/lit_multi_furnace.json
 	at net.minecraft.client.renderer.block.model.ModelBakery.loadMultipartMBD(ModelBakery.java:228) ~[ModelBakery.class:?]
 	at net.minecraft.client.renderer.block.model.ModelBakery.getModelBlockDefinition(ModelBakery.java:208) ~[ModelBakery.class:?]
 	at net.minecraftforge.client.model.ModelLoader.getModelBlockDefinition(ModelLoader.java:265) ~[ModelLoader.class:?]
 	... 20 more
-Caused by: java.io.FileNotFoundException: mof2mod:blockstates/multi_furnace.json
+Caused by: java.io.FileNotFoundException: mof2mod:blockstates/lit_multi_furnace.json
 	at net.minecraft.client.resources.FallbackResourceManager.getAllResources(FallbackResourceManager.java:104) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getAllResources(SimpleReloadableResourceManager.java:79) ~[SimpleReloadableResourceManager.class:?]
 	at net.minecraft.client.renderer.block.model.ModelBakery.loadMultipartMBD(ModelBakery.java:221) ~[ModelBakery.class:?]
 	at net.minecraft.client.renderer.block.model.ModelBakery.getModelBlockDefinition(ModelBakery.java:208) ~[ModelBakery.class:?]
 	at net.minecraftforge.client.model.ModelLoader.getModelBlockDefinition(ModelLoader.java:265) ~[ModelLoader.class:?]
 	... 20 more
-[16:04:08] [main/ERROR] [FML]: Exception loading model for variant mof2mod:multi_furnace#facing=east for blockstate "mof2mod:multi_furnace[facing=east]"
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model mof2mod:multi_furnace#facing=east with loader VariantLoader.INSTANCE, skipping
+[20:11:26] [main/ERROR] [FML]: Exception loading model for variant mof2mod:lit_multi_furnace#facing=north,powered=true for blockstate "mof2mod:lit_multi_furnace[facing=north,powered=true]"
+net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model mof2mod:lit_multi_furnace#facing=north,powered=true with loader VariantLoader.INSTANCE, skipping
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:161) ~[ModelLoaderRegistry.class:?]
 	at net.minecraftforge.client.model.ModelLoader.registerVariant(ModelLoader.java:235) ~[ModelLoader.class:?]
 	at net.minecraft.client.renderer.block.model.ModelBakery.loadBlock(ModelBakery.java:153) ~[ModelBakery.class:?]
@@ -293,7 +272,7 @@ Caused by: net.minecraft.client.renderer.block.model.ModelBlockDefinition$Missin
 	at net.minecraftforge.client.model.ModelLoader$VariantLoader.loadModel(ModelLoader.java:1175) ~[ModelLoader$VariantLoader.class:?]
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:157) ~[ModelLoaderRegistry.class:?]
 	... 21 more
-[16:04:08] [main/ERROR] [FML]: Exception loading model for variant mof2mod:block_platinum#inventory for item "mof2mod:block_platinum", normal location exception: 
+[20:11:26] [main/ERROR] [FML]: Exception loading model for variant mof2mod:block_platinum#inventory for item "mof2mod:block_platinum", normal location exception: 
 net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model mof2mod:item/block_platinum with loader VanillaLoader.INSTANCE, skipping
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:161) ~[ModelLoaderRegistry.class:?]
 	at net.minecraftforge.client.model.ModelLoader.loadItemModels(ModelLoader.java:302) ~[ModelLoader.class:?]
@@ -324,7 +303,7 @@ Caused by: java.io.FileNotFoundException: mof2mod:models/item/block_platinum.jso
 	at net.minecraftforge.client.model.ModelLoader$VanillaLoader.loadModel(ModelLoader.java:861) ~[ModelLoader$VanillaLoader.class:?]
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:157) ~[ModelLoaderRegistry.class:?]
 	... 20 more
-[16:04:08] [main/ERROR] [FML]: Exception loading model for variant mof2mod:block_platinum#inventory for item "mof2mod:block_platinum", blockstate location exception: 
+[20:11:26] [main/ERROR] [FML]: Exception loading model for variant mof2mod:block_platinum#inventory for item "mof2mod:block_platinum", blockstate location exception: 
 net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model mof2mod:block_platinum#inventory with loader VariantLoader.INSTANCE, skipping
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:161) ~[ModelLoaderRegistry.class:?]
 	at net.minecraftforge.client.model.ModelLoader.loadItemModels(ModelLoader.java:296) ~[ModelLoader.class:?]
@@ -352,43 +331,13 @@ Caused by: net.minecraft.client.renderer.block.model.ModelBlockDefinition$Missin
 	at net.minecraftforge.client.model.ModelLoader$VariantLoader.loadModel(ModelLoader.java:1175) ~[ModelLoader$VariantLoader.class:?]
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:157) ~[ModelLoaderRegistry.class:?]
 	... 20 more
-[16:04:08] [main/ERROR] [FML]: Exception loading model for variant mof2mod:block_aluminium#inventory for item "mof2mod:block_aluminium", normal location exception: 
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model mof2mod:item/block_aluminium with loader VanillaLoader.INSTANCE, skipping
+[20:11:26] [main/ERROR] [FML]: Exception loading model for variant mof2mod:multi_furnace#facing=west,powered=false for blockstate "mof2mod:multi_furnace[facing=west,powered=false]"
+net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model mof2mod:multi_furnace#facing=west,powered=false with loader VariantLoader.INSTANCE, skipping
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:161) ~[ModelLoaderRegistry.class:?]
-	at net.minecraftforge.client.model.ModelLoader.loadItemModels(ModelLoader.java:302) ~[ModelLoader.class:?]
-	at net.minecraft.client.renderer.block.model.ModelBakery.loadVariantItemModels(ModelBakery.java:175) ~[ModelBakery.class:?]
-	at net.minecraftforge.client.model.ModelLoader.setupModelRegistry(ModelLoader.java:151) ~[ModelLoader.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:28) [ModelManager.class:?]
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.registerReloadListener(SimpleReloadableResourceManager.java:121) [SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.Minecraft.init(Minecraft.java:559) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:421) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_161]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_161]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_161]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_161]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_161]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_161]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_161]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_161]
-	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
-	at GradleStart.main(GradleStart.java:25) [start/:?]
-Caused by: java.io.FileNotFoundException: mof2mod:models/item/block_aluminium.json
-	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:69) ~[FallbackResourceManager.class:?]
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:65) ~[SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.renderer.block.model.ModelBakery.loadModel(ModelBakery.java:334) ~[ModelBakery.class:?]
-	at net.minecraftforge.client.model.ModelLoader.access$1400(ModelLoader.java:115) ~[ModelLoader.class:?]
-	at net.minecraftforge.client.model.ModelLoader$VanillaLoader.loadModel(ModelLoader.java:861) ~[ModelLoader$VanillaLoader.class:?]
-	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:157) ~[ModelLoaderRegistry.class:?]
-	... 20 more
-[16:04:08] [main/ERROR] [FML]: Exception loading model for variant mof2mod:block_aluminium#inventory for item "mof2mod:block_aluminium", blockstate location exception: 
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model mof2mod:block_aluminium#inventory with loader VariantLoader.INSTANCE, skipping
-	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:161) ~[ModelLoaderRegistry.class:?]
-	at net.minecraftforge.client.model.ModelLoader.loadItemModels(ModelLoader.java:296) ~[ModelLoader.class:?]
-	at net.minecraft.client.renderer.block.model.ModelBakery.loadVariantItemModels(ModelBakery.java:175) ~[ModelBakery.class:?]
-	at net.minecraftforge.client.model.ModelLoader.setupModelRegistry(ModelLoader.java:151) ~[ModelLoader.class:?]
+	at net.minecraftforge.client.model.ModelLoader.registerVariant(ModelLoader.java:235) ~[ModelLoader.class:?]
+	at net.minecraft.client.renderer.block.model.ModelBakery.loadBlock(ModelBakery.java:153) ~[ModelBakery.class:?]
+	at net.minecraftforge.client.model.ModelLoader.loadBlocks(ModelLoader.java:223) ~[ModelLoader.class:?]
+	at net.minecraftforge.client.model.ModelLoader.setupModelRegistry(ModelLoader.java:150) ~[ModelLoader.class:?]
 	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:28) [ModelManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.registerReloadListener(SimpleReloadableResourceManager.java:121) [SimpleReloadableResourceManager.class:?]
 	at net.minecraft.client.Minecraft.init(Minecraft.java:559) [Minecraft.class:?]
@@ -410,9 +359,9 @@ Caused by: net.minecraft.client.renderer.block.model.ModelBlockDefinition$Missin
 	at net.minecraft.client.renderer.block.model.ModelBlockDefinition.getVariant(ModelBlockDefinition.java:83) ~[ModelBlockDefinition.class:?]
 	at net.minecraftforge.client.model.ModelLoader$VariantLoader.loadModel(ModelLoader.java:1175) ~[ModelLoader$VariantLoader.class:?]
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:157) ~[ModelLoaderRegistry.class:?]
-	... 20 more
-[16:04:08] [main/FATAL] [FML]: Suppressed additional 12 model loading errors for domain mof2mod
-[16:04:10] [main/ERROR] [FML]: Parsing error loading recipe mof2mod:planks_maple
+	... 21 more
+[20:11:26] [main/FATAL] [FML]: Suppressed additional 25 model loading errors for domain mof2mod
+[20:11:28] [main/ERROR] [FML]: Parsing error loading recipe mof2mod:planks_maple
 com.google.gson.JsonSyntaxException: Unknown item 'mof2mod:log_maple'
 	at net.minecraftforge.common.crafting.CraftingHelper.getItemStackBasic(CraftingHelper.java:260) ~[CraftingHelper.class:?]
 	at net.minecraftforge.common.crafting.CraftingHelper.lambda$init$16(CraftingHelper.java:537) ~[CraftingHelper.class:?]
@@ -441,56 +390,57 @@ com.google.gson.JsonSyntaxException: Unknown item 'mof2mod:log_maple'
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_161]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
 	at GradleStart.main(GradleStart.java:25) [start/:?]
-[16:04:10] [main/INFO] [FML]: Applying holder lookups
-[16:04:10] [main/INFO] [FML]: Holder lookups applied
-[16:04:10] [main/INFO] [FML]: Injecting itemstacks
-[16:04:10] [main/INFO] [FML]: Itemstack injection complete
-[16:04:11] [main/INFO] [FML]: Forge Mod Loader has successfully loaded 5 mods
-[16:04:11] [main/WARN] [minecraft/GameSettings]: Skipping bad option: lastServer:
-[16:04:12] [main/INFO] [mojang/NarratorWindows]: Narrator library for x64 successfully loaded
-[16:04:12] [main/ERROR] [FML.TEXTURE_ERRORS]: +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
-[16:04:12] [main/ERROR] [FML.TEXTURE_ERRORS]: The following texture errors were found.
-[16:04:12] [main/ERROR] [FML.TEXTURE_ERRORS]: ==================================================
-[16:04:12] [main/ERROR] [FML.TEXTURE_ERRORS]:   DOMAIN mof2mod
-[16:04:12] [main/ERROR] [FML.TEXTURE_ERRORS]: --------------------------------------------------
-[16:04:12] [main/ERROR] [FML.TEXTURE_ERRORS]:   domain mof2mod is missing 1 texture
-[16:04:12] [main/ERROR] [FML.TEXTURE_ERRORS]:     domain mof2mod has 1 location:
-[16:04:12] [main/ERROR] [FML.TEXTURE_ERRORS]:       mod mof2mod resources at C:\Users\Neilly_parfait\Documents\mofmofmod\build\libs\modid-1.0.jar
-[16:04:12] [main/ERROR] [FML.TEXTURE_ERRORS]: -------------------------
-[16:04:12] [main/ERROR] [FML.TEXTURE_ERRORS]:     The missing resources for domain mof2mod are:
-[16:04:12] [main/ERROR] [FML.TEXTURE_ERRORS]:       textures/items/placer.png
-[16:04:12] [main/ERROR] [FML.TEXTURE_ERRORS]: -------------------------
-[16:04:12] [main/ERROR] [FML.TEXTURE_ERRORS]:     No other errors exist for domain mof2mod
-[16:04:12] [main/ERROR] [FML.TEXTURE_ERRORS]: ==================================================
-[16:04:12] [main/ERROR] [FML.TEXTURE_ERRORS]: +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
-[16:04:16] [Realms Notification Availability checker #1/INFO] [mojang/RealmsClient]: Could not authorize you against Realms server: Invalid session id
-[16:04:49] [Server thread/INFO] [minecraft/IntegratedServer]: Starting integrated minecraft server version 1.12.2
-[16:04:49] [Server thread/INFO] [minecraft/IntegratedServer]: Generating keypair
-[16:04:49] [Server thread/INFO] [FML]: Injecting existing registry data into this server instance
-[16:04:50] [Server thread/INFO] [FML]: Applying holder lookups
-[16:04:50] [Server thread/INFO] [FML]: Holder lookups applied
-[16:04:51] [Server thread/INFO] [FML]: Loading dimension 0 (New World) (net.minecraft.server.integrated.IntegratedServer@6760e680)
-[16:04:52] [Server thread/INFO] [minecraft/AdvancementList]: Loaded 488 advancements
-[16:04:52] [Server thread/INFO] [FML]: Loading dimension -1 (New World) (net.minecraft.server.integrated.IntegratedServer@6760e680)
-[16:04:52] [Server thread/INFO] [FML]: Loading dimension 1 (New World) (net.minecraft.server.integrated.IntegratedServer@6760e680)
-[16:04:52] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing start region for level 0
-[16:04:53] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing spawn area: 1%
-[16:04:54] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing spawn area: 19%
-[16:04:55] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing spawn area: 52%
-[16:04:56] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing spawn area: 90%
-[16:04:57] [Server thread/INFO] [FML]: Unloading dimension -1
-[16:04:57] [Server thread/INFO] [FML]: Unloading dimension 1
-[16:05:03] [Netty Local Client IO #0/INFO] [FML]: Server protocol version 2
-[16:05:03] [Netty Server IO #1/INFO] [FML]: Client protocol version 2
-[16:05:03] [Netty Server IO #1/INFO] [FML]: Client attempting to join with 5 mods : minecraft@1.12.2,mof2mod@1.0,FML@8.0.99.99,forge@14.23.5.2768,mcp@9.42
-[16:05:03] [Netty Local Client IO #0/INFO] [FML]: [Netty Local Client IO #0] Client side modded connection established
-[16:05:03] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
-[16:05:03] [Server thread/INFO] [minecraft/PlayerList]: Player819[local:E:21a7c0b9] logged in with entity id 84 at (-341.8488220247617, 122.5, -918.9265924165239)
-[16:05:03] [Server thread/INFO] [minecraft/MinecraftServer]: Player819 joined the game
-[16:05:06] [Server thread/INFO] [minecraft/IntegratedServer]: Saving and pausing game...
-[16:05:07] [main/INFO] [minecraft/AdvancementList]: Loaded 52 advancements
-[16:05:07] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'New World'/overworld
-[16:05:07] [pool-2-thread-1/WARN] [mojang/YggdrasilMinecraftSessionService]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@33e8e6a7[id=00bb7f76-47ca-3891-96fe-03177d2fac78,name=Player819,properties={},legacy=false]
+[20:11:28] [main/INFO] [FML]: Applying holder lookups
+[20:11:28] [main/INFO] [FML]: Holder lookups applied
+[20:11:28] [main/INFO] [FML]: Injecting itemstacks
+[20:11:28] [main/INFO] [FML]: Itemstack injection complete
+[20:11:29] [main/INFO] [FML]: Forge Mod Loader has successfully loaded 5 mods
+[20:11:29] [main/WARN] [minecraft/GameSettings]: Skipping bad option: lastServer:
+[20:11:30] [main/INFO] [mojang/NarratorWindows]: Narrator library for x64 successfully loaded
+[20:11:30] [main/ERROR] [FML.TEXTURE_ERRORS]: +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
+[20:11:30] [main/ERROR] [FML.TEXTURE_ERRORS]: The following texture errors were found.
+[20:11:30] [main/ERROR] [FML.TEXTURE_ERRORS]: ==================================================
+[20:11:30] [main/ERROR] [FML.TEXTURE_ERRORS]:   DOMAIN mof2mod
+[20:11:30] [main/ERROR] [FML.TEXTURE_ERRORS]: --------------------------------------------------
+[20:11:30] [main/ERROR] [FML.TEXTURE_ERRORS]:   domain mof2mod is missing 1 texture
+[20:11:30] [main/ERROR] [FML.TEXTURE_ERRORS]:     domain mof2mod has 1 location:
+[20:11:30] [main/ERROR] [FML.TEXTURE_ERRORS]:       mod mof2mod resources at C:\Users\Neilly_parfait\Documents\mofmofmod\build\libs\modid-1.0.jar
+[20:11:30] [main/ERROR] [FML.TEXTURE_ERRORS]: -------------------------
+[20:11:30] [main/ERROR] [FML.TEXTURE_ERRORS]:     The missing resources for domain mof2mod are:
+[20:11:30] [main/ERROR] [FML.TEXTURE_ERRORS]:       textures/items/placer.png
+[20:11:30] [main/ERROR] [FML.TEXTURE_ERRORS]: -------------------------
+[20:11:30] [main/ERROR] [FML.TEXTURE_ERRORS]:     No other errors exist for domain mof2mod
+[20:11:30] [main/ERROR] [FML.TEXTURE_ERRORS]: ==================================================
+[20:11:30] [main/ERROR] [FML.TEXTURE_ERRORS]: +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
+[20:11:32] [Realms Notification Availability checker #1/INFO] [mojang/RealmsClient]: Could not authorize you against Realms server: Invalid session id
+[20:12:08] [Server thread/INFO] [minecraft/IntegratedServer]: Starting integrated minecraft server version 1.12.2
+[20:12:08] [Server thread/INFO] [minecraft/IntegratedServer]: Generating keypair
+[20:12:09] [Server thread/INFO] [FML]: Injecting existing registry data into this server instance
+[20:12:09] [Server thread/INFO] [FML]: Applying holder lookups
+[20:12:09] [Server thread/INFO] [FML]: Holder lookups applied
+[20:12:10] [Server thread/INFO] [FML]: Loading dimension 0 (New World) (net.minecraft.server.integrated.IntegratedServer@5aa90578)
+[20:12:11] [Server thread/INFO] [minecraft/AdvancementList]: Loaded 488 advancements
+[20:12:11] [Server thread/INFO] [FML]: Loading dimension -1 (New World) (net.minecraft.server.integrated.IntegratedServer@5aa90578)
+[20:12:11] [Server thread/INFO] [FML]: Loading dimension 1 (New World) (net.minecraft.server.integrated.IntegratedServer@5aa90578)
+[20:12:11] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing start region for level 0
+[20:12:12] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing spawn area: 8%
+[20:12:13] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing spawn area: 45%
+[20:12:14] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing spawn area: 89%
+[20:12:15] [Server thread/INFO] [FML]: Unloading dimension -1
+[20:12:15] [Server thread/INFO] [FML]: Unloading dimension 1
+[20:12:20] [Netty Local Client IO #0/INFO] [FML]: Server protocol version 2
+[20:12:20] [Netty Server IO #1/INFO] [FML]: Client protocol version 2
+[20:12:20] [Netty Server IO #1/INFO] [FML]: Client attempting to join with 5 mods : minecraft@1.12.2,mof2mod@1.0,FML@8.0.99.99,forge@14.23.5.2768,mcp@9.42
+[20:12:20] [Netty Local Client IO #0/INFO] [FML]: [Netty Local Client IO #0] Client side modded connection established
+[20:12:20] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[20:12:20] [Server thread/INFO] [minecraft/PlayerList]: Player333[local:E:7033f63b] logged in with entity id 146 at (-344.042772617316, 123.0, -912.2035547906506)
+[20:12:20] [Server thread/INFO] [minecraft/MinecraftServer]: Player333 joined the game
+[20:12:20] [Server thread/INFO] [minecraft/MinecraftServer]: Player333 has made the advancement [Acquire Hardware]
+[20:12:22] [Server thread/INFO] [minecraft/IntegratedServer]: Saving and pausing game...
+[20:12:23] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'New World'/overworld
+[20:12:23] [main/INFO] [minecraft/GuiNewChat]: [CHAT] Player333 has made the advancement [Acquire Hardware]
+[20:12:23] [main/INFO] [minecraft/AdvancementList]: Loaded 76 advancements
+[20:12:23] [pool-2-thread-1/WARN] [mojang/YggdrasilMinecraftSessionService]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@3e51a2de[id=a4081500-9e8c-36ae-a97c-f165f9882cba,name=Player333,properties={},legacy=false]
 com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
 	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:79) ~[YggdrasilAuthenticationService.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:180) [YggdrasilMinecraftSessionService.class:?]
@@ -512,48 +462,9 @@ com.mojang.authlib.exceptions.AuthenticationException: The client has sent too m
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_161]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_161]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:05:08] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Did the system time change, or is the server overloaded? Running 5237ms behind, skipping 104 tick(s)
-[16:05:40] [Server thread/INFO] [minecraft/IntegratedServer]: Saving and pausing game...
-[16:05:40] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'New World'/overworld
-[16:07:08] [main/INFO] [minecraft/AdvancementList]: Loaded 56 advancements
-[16:08:22] [Server thread/INFO] [minecraft/IntegratedServer]: Saving and pausing game...
-[16:08:22] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'New World'/overworld
-[16:08:23] [Server thread/INFO] [minecraft/MinecraftServer]: Stopping server
-[16:08:23] [Server thread/INFO] [minecraft/MinecraftServer]: Saving players
-[16:08:23] [Server thread/INFO] [minecraft/NetHandlerPlayServer]: Player819 lost connection: Disconnected
-[16:08:23] [Server thread/INFO] [minecraft/MinecraftServer]: Player819 left the game
-[16:08:23] [Server thread/INFO] [minecraft/NetHandlerPlayServer]: Stopping singleplayer server as player logged out
-[16:08:23] [Server thread/INFO] [minecraft/MinecraftServer]: Saving worlds
-[16:08:23] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'New World'/overworld
-[16:08:24] [Server thread/INFO] [FML]: Unloading dimension 0
-[16:08:24] [Server thread/INFO] [FML]: Applying holder lookups
-[16:08:24] [Server thread/INFO] [FML]: Holder lookups applied
-[16:08:54] [Server thread/INFO] [minecraft/IntegratedServer]: Starting integrated minecraft server version 1.12.2
-[16:08:54] [Server thread/INFO] [minecraft/IntegratedServer]: Generating keypair
-[16:08:55] [Server thread/INFO] [FML]: Injecting existing registry data into this server instance
-[16:08:55] [Server thread/INFO] [FML]: Applying holder lookups
-[16:08:55] [Server thread/INFO] [FML]: Holder lookups applied
-[16:08:55] [Server thread/INFO] [FML]: Loading dimension 0 (New World) (net.minecraft.server.integrated.IntegratedServer@177fd15c)
-[16:08:56] [Server thread/INFO] [minecraft/AdvancementList]: Loaded 488 advancements
-[16:08:56] [Server thread/INFO] [FML]: Loading dimension -1 (New World) (net.minecraft.server.integrated.IntegratedServer@177fd15c)
-[16:08:56] [Server thread/INFO] [FML]: Loading dimension 1 (New World) (net.minecraft.server.integrated.IntegratedServer@177fd15c)
-[16:08:56] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing start region for level 0
-[16:08:57] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing spawn area: 27%
-[16:08:58] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing spawn area: 68%
-[16:08:59] [Server thread/INFO] [FML]: Unloading dimension -1
-[16:08:59] [Server thread/INFO] [FML]: Unloading dimension 1
-[16:08:59] [Netty Local Client IO #1/INFO] [FML]: Server protocol version 2
-[16:08:59] [Netty Server IO #3/INFO] [FML]: Client protocol version 2
-[16:08:59] [Netty Server IO #3/INFO] [FML]: Client attempting to join with 5 mods : minecraft@1.12.2,mof2mod@1.0,FML@8.0.99.99,forge@14.23.5.2768,mcp@9.42
-[16:08:59] [Netty Local Client IO #1/INFO] [FML]: [Netty Local Client IO #1] Client side modded connection established
-[16:08:59] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
-[16:08:59] [Server thread/INFO] [minecraft/PlayerList]: Player819[local:E:fc39a63c] logged in with entity id 69538 at (-341.08283194204057, 122.0625, -914.5066678284403)
-[16:08:59] [Server thread/INFO] [minecraft/MinecraftServer]: Player819 joined the game
-[16:09:01] [Server thread/INFO] [minecraft/IntegratedServer]: Saving and pausing game...
-[16:09:01] [main/INFO] [minecraft/AdvancementList]: Loaded 56 advancements
-[16:09:01] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'New World'/overworld
-[16:09:53] [main/INFO] [minecraft/AdvancementList]: Loaded 61 advancements
-[16:19:18] [main/FATAL] [minecraft/Minecraft]: Error executing task
+[20:12:26] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Did the system time change, or is the server overloaded? Running 4030ms behind, skipping 80 tick(s)
+[20:12:33] [main/INFO] [minecraft/AdvancementList]: Loaded 93 advancements
+[20:13:22] [main/FATAL] [minecraft/Minecraft]: Error executing task
 java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
 	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
 	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
@@ -582,7 +493,7 @@ Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui canno
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
 	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
 	... 15 more
-[16:19:18] [main/FATAL] [minecraft/Minecraft]: Error executing task
+[20:13:22] [main/FATAL] [minecraft/Minecraft]: Error executing task
 java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
 	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
 	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
@@ -611,7 +522,7 @@ Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui canno
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
 	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
 	... 15 more
-[16:19:19] [main/FATAL] [minecraft/Minecraft]: Error executing task
+[20:13:23] [main/FATAL] [minecraft/Minecraft]: Error executing task
 java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
 	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
 	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
@@ -640,7 +551,7 @@ Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui canno
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
 	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
 	... 15 more
-[16:19:43] [main/FATAL] [minecraft/Minecraft]: Error executing task
+[20:13:23] [main/FATAL] [minecraft/Minecraft]: Error executing task
 java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
 	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
 	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
@@ -669,7 +580,7 @@ Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui canno
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
 	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
 	... 15 more
-[16:19:44] [main/FATAL] [minecraft/Minecraft]: Error executing task
+[20:13:23] [main/FATAL] [minecraft/Minecraft]: Error executing task
 java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
 	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
 	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
@@ -698,7 +609,7 @@ Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui canno
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
 	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
 	... 15 more
-[16:19:44] [main/FATAL] [minecraft/Minecraft]: Error executing task
+[20:13:24] [main/FATAL] [minecraft/Minecraft]: Error executing task
 java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
 	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
 	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
@@ -727,8 +638,7 @@ Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui canno
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
 	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
 	... 15 more
-[16:19:54] [main/INFO] [minecraft/AdvancementList]: Loaded 62 advancements
-[16:20:01] [main/FATAL] [minecraft/Minecraft]: Error executing task
+[20:13:26] [main/FATAL] [minecraft/Minecraft]: Error executing task
 java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
 	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
 	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
@@ -757,7 +667,7 @@ Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui canno
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
 	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
 	... 15 more
-[16:20:05] [main/FATAL] [minecraft/Minecraft]: Error executing task
+[20:13:26] [main/FATAL] [minecraft/Minecraft]: Error executing task
 java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
 	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
 	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
@@ -786,24 +696,7 @@ Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui canno
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
 	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
 	... 15 more
-[16:20:15] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:20:31] [main/FATAL] [minecraft/Minecraft]: Error executing task
+[20:13:28] [main/FATAL] [minecraft/Minecraft]: Error executing task
 java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
 	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
 	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
@@ -832,7 +725,7 @@ Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui canno
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
 	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
 	... 15 more
-[16:20:43] [main/FATAL] [minecraft/Minecraft]: Error executing task
+[20:13:28] [main/FATAL] [minecraft/Minecraft]: Error executing task
 java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
 	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
 	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
@@ -861,7 +754,7 @@ Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui canno
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
 	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
 	... 15 more
-[16:20:43] [main/FATAL] [minecraft/Minecraft]: Error executing task
+[20:13:29] [main/FATAL] [minecraft/Minecraft]: Error executing task
 java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
 	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
 	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
@@ -890,7 +783,7 @@ Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui canno
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
 	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
 	... 15 more
-[16:20:44] [main/FATAL] [minecraft/Minecraft]: Error executing task
+[20:13:29] [main/FATAL] [minecraft/Minecraft]: Error executing task
 java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
 	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
 	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
@@ -919,7 +812,7 @@ Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui canno
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
 	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
 	... 15 more
-[16:20:45] [main/FATAL] [minecraft/Minecraft]: Error executing task
+[20:13:30] [main/FATAL] [minecraft/Minecraft]: Error executing task
 java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
 	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
 	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
@@ -948,7 +841,7 @@ Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui canno
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
 	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
 	... 15 more
-[16:20:45] [main/FATAL] [minecraft/Minecraft]: Error executing task
+[20:13:30] [main/FATAL] [minecraft/Minecraft]: Error executing task
 java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
 	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
 	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
@@ -977,27 +870,7 @@ Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui canno
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
 	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
 	... 15 more
-[16:20:58] [Server thread/INFO] [minecraft/MinecraftServer]: Player819 has made the advancement [Acquire Hardware]
-[16:20:58] [main/INFO] [minecraft/GuiNewChat]: [CHAT] Player819 has made the advancement [Acquire Hardware]
-[16:20:58] [main/INFO] [minecraft/AdvancementList]: Loaded 91 advancements
-[16:20:59] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:21:41] [main/FATAL] [minecraft/Minecraft]: Error executing task
+[20:13:30] [main/FATAL] [minecraft/Minecraft]: Error executing task
 java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
 	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
 	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
@@ -1026,7 +899,9 @@ Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui canno
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
 	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
 	... 15 more
-[16:21:41] [main/FATAL] [minecraft/Minecraft]: Error executing task
+[20:13:36] [Server thread/INFO] [minecraft/IntegratedServer]: Saving and pausing game...
+[20:13:37] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'New World'/overworld
+[20:14:22] [main/FATAL] [minecraft/Minecraft]: Error executing task
 java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
 	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
 	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
@@ -1055,7 +930,7 @@ Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui canno
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
 	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
 	... 15 more
-[16:21:42] [main/FATAL] [minecraft/Minecraft]: Error executing task
+[20:14:23] [main/FATAL] [minecraft/Minecraft]: Error executing task
 java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
 	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
 	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
@@ -1084,96 +959,7 @@ Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui canno
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
 	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
 	... 15 more
-[16:21:44] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:22:29] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:23:14] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:23:56] [main/INFO] [minecraft/AdvancementList]: Loaded 93 advancements
-[16:24:02] [Server thread/FATAL] [minecraft/MinecraftServer]: Error executing task
-java.util.concurrent.ExecutionException: java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
-	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
-	at net.minecraft.util.Util.runTask(Util.java:54) [Util.class:?]
-	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:798) [MinecraftServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:743) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-Caused by: java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraftforge.common.util.BlockSnapshot.getTileNBT(BlockSnapshot.java:132) ~[BlockSnapshot.class:?]
-	at net.minecraftforge.common.util.BlockSnapshot.<init>(BlockSnapshot.java:61) ~[BlockSnapshot.class:?]
-	at net.minecraftforge.common.util.BlockSnapshot.<init>(BlockSnapshot.java:82) ~[BlockSnapshot.class:?]
-	at net.minecraftforge.common.util.BlockSnapshot.getBlockSnapshot(BlockSnapshot.java:113) ~[BlockSnapshot.class:?]
-	at net.minecraft.world.World.setBlockState(World.java:394) ~[World.class:?]
-	at com.indiv.neilly.objects.blocks.BlockMultiFurnace.setDefaultFacing(BlockMultiFurnace.java:68) ~[BlockMultiFurnace.class:?]
-	at com.indiv.neilly.objects.blocks.BlockMultiFurnace.onBlockAdded(BlockMultiFurnace.java:43) ~[BlockMultiFurnace.class:?]
-	at net.minecraft.world.chunk.Chunk.setBlockState(Chunk.java:662) ~[Chunk.class:?]
-	at net.minecraft.world.World.setBlockState(World.java:401) ~[World.class:?]
-	at net.minecraft.item.ItemBlock.placeBlockAt(ItemBlock.java:199) ~[ItemBlock.class:?]
-	at net.minecraft.item.ItemBlock.onItemUse(ItemBlock.java:57) ~[ItemBlock.class:?]
-	at net.minecraftforge.common.ForgeHooks.onPlaceItemIntoWorld(ForgeHooks.java:876) ~[ForgeHooks.class:?]
-	at net.minecraft.item.ItemStack.onItemUse(ItemStack.java:200) ~[ItemStack.class:?]
-	at net.minecraft.server.management.PlayerInteractionManager.processRightClickBlock(PlayerInteractionManager.java:507) ~[PlayerInteractionManager.class:?]
-	at net.minecraft.network.NetHandlerPlayServer.processTryUseItemOnBlock(NetHandlerPlayServer.java:769) ~[NetHandlerPlayServer.class:?]
-	at net.minecraft.network.play.client.CPacketPlayerTryUseItemOnBlock.processPacket(CPacketPlayerTryUseItemOnBlock.java:68) ~[CPacketPlayerTryUseItemOnBlock.class:?]
-	at net.minecraft.network.play.client.CPacketPlayerTryUseItemOnBlock.processPacket(CPacketPlayerTryUseItemOnBlock.java:13) ~[CPacketPlayerTryUseItemOnBlock.class:?]
-	at net.minecraft.network.PacketThreadUtil$1.run(PacketThreadUtil.java:21) ~[PacketThreadUtil$1.class:?]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_161]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
-	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
-	... 5 more
-[16:24:30] [main/FATAL] [minecraft/Minecraft]: Error executing task
+[20:14:23] [main/FATAL] [minecraft/Minecraft]: Error executing task
 java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
 	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
 	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
@@ -1202,315 +988,7 @@ Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui canno
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
 	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
 	... 15 more
-[16:24:44] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:25:29] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:26:14] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:26:59] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:27:44] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:28:29] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:29:15] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:30:00] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:30:45] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:31:15] [main/INFO] [minecraft/ChunkProviderClient]: Warning: Clientside chunk ticking took 185 ms
-[16:31:30] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:32:14] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:33:00] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:33:44] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:34:29] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:35:14] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:35:37] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Did the system time change, or is the server overloaded? Running 5445ms behind, skipping 108 tick(s)
-[16:36:03] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:36:48] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:37:32] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:38:09] [main/FATAL] [minecraft/Minecraft]: Error executing task
+[20:14:23] [main/FATAL] [minecraft/Minecraft]: Error executing task
 java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
 	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
 	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
@@ -1539,7 +1017,7 @@ Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui canno
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
 	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
 	... 15 more
-[16:38:13] [main/FATAL] [minecraft/Minecraft]: Error executing task
+[20:14:24] [main/FATAL] [minecraft/Minecraft]: Error executing task
 java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
 	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
 	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
@@ -1568,7 +1046,7 @@ Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui canno
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
 	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
 	... 15 more
-[16:38:13] [main/FATAL] [minecraft/Minecraft]: Error executing task
+[20:14:26] [main/FATAL] [minecraft/Minecraft]: Error executing task
 java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
 	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
 	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
@@ -1597,92 +1075,7 @@ Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui canno
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
 	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
 	... 15 more
-[16:38:17] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:39:02] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:39:48] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:40:32] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:41:17] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:41:19] [main/FATAL] [minecraft/Minecraft]: Error executing task
+[20:14:26] [main/FATAL] [minecraft/Minecraft]: Error executing task
 java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
 	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
 	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
@@ -1711,7 +1104,7 @@ Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui canno
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
 	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
 	... 15 more
-[16:41:20] [main/FATAL] [minecraft/Minecraft]: Error executing task
+[20:14:59] [main/FATAL] [minecraft/Minecraft]: Error executing task
 java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
 	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
 	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
@@ -1740,7 +1133,7 @@ Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui canno
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
 	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
 	... 15 more
-[16:41:21] [main/FATAL] [minecraft/Minecraft]: Error executing task
+[20:15:00] [main/FATAL] [minecraft/Minecraft]: Error executing task
 java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
 	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
 	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
@@ -1769,7 +1162,10 @@ Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui canno
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
 	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
 	... 15 more
-[16:41:22] [main/FATAL] [minecraft/Minecraft]: Error executing task
+[20:15:00] [Server thread/INFO] [minecraft/MinecraftServer]: Player333 has made the advancement [Sweet dreams]
+[20:15:00] [main/INFO] [minecraft/GuiNewChat]: [CHAT] Player333 has made the advancement [Sweet dreams]
+[20:15:00] [main/INFO] [minecraft/AdvancementList]: Loaded 96 advancements
+[20:15:00] [main/FATAL] [minecraft/Minecraft]: Error executing task
 java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
 	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
 	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
@@ -1798,7 +1194,7 @@ Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui canno
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
 	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
 	... 15 more
-[16:41:23] [main/FATAL] [minecraft/Minecraft]: Error executing task
+[20:15:01] [main/FATAL] [minecraft/Minecraft]: Error executing task
 java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
 	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
 	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
@@ -1827,108 +1223,170 @@ Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui canno
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
 	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
 	... 15 more
-[16:42:02] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:42:45] [Server thread/INFO] [minecraft/IntegratedServer]: Saving and pausing game...
-[16:42:45] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'New World'/overworld
-[16:42:45] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:177) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:42:59] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:766) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:43:02] [Server thread/INFO] [minecraft/IntegratedServer]: Saving and pausing game...
-[16:43:02] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'New World'/overworld
-[16:43:02] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:177) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:50:00] [Server thread/INFO] [minecraft/IntegratedServer]: Saving and pausing game...
-[16:50:00] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'New World'/overworld
-[16:50:00] [Server thread/ERROR] [FML]: A TileEntity type com.indiv.neilly.entity.TileEntityMultiFurnace has throw an exception trying to write state. It will not persist. Report this to the mod author
-java.lang.RuntimeException: class com.indiv.neilly.entity.TileEntityMultiFurnace is missing a mapping! This is a bug!
-	at net.minecraft.tileentity.TileEntity.writeInternal(TileEntity.java:89) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:80) ~[TileEntity.class:?]
-	at net.minecraft.tileentity.TileEntityLockable.writeToNBT(TileEntityLockable.java:22) ~[TileEntityLockable.class:?]
-	at com.indiv.neilly.entity.TileEntityMultiFurnace.writeToNBT(TileEntityMultiFurnace.java:49) ~[TileEntityMultiFurnace.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.writeChunkToNBT(AnvilChunkLoader.java:414) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.chunk.storage.AnvilChunkLoader.saveChunk(AnvilChunkLoader.java:185) [AnvilChunkLoader.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunkData(ChunkProviderServer.java:214) [ChunkProviderServer.class:?]
-	at net.minecraft.world.gen.ChunkProviderServer.saveChunks(ChunkProviderServer.java:242) [ChunkProviderServer.class:?]
-	at net.minecraft.world.WorldServer.saveAllChunks(WorldServer.java:1061) [WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.saveAllWorlds(MinecraftServer.java:468) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.saveAllWorlds(IntegratedServer.java:274) [IntegratedServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:177) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[16:50:01] [Server thread/INFO] [minecraft/MinecraftServer]: Stopping server
-[16:50:01] [Server thread/INFO] [minecraft/MinecraftServer]: Saving players
-[16:50:01] [Server thread/INFO] [minecraft/NetHandlerPlayServer]: Player819 lost connection: Disconnected
-[16:50:01] [Server thread/INFO] [minecraft/MinecraftServer]: Player819 left the game
-[16:50:01] [Server thread/INFO] [minecraft/NetHandlerPlayServer]: Stopping singleplayer server as player logged out
-[16:50:01] [Server thread/INFO] [minecraft/MinecraftServer]: Saving worlds
-[16:50:01] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'New World'/overworld
-[16:50:03] [Server thread/INFO] [FML]: Unloading dimension 0
-[16:50:04] [Server thread/INFO] [FML]: Applying holder lookups
-[16:50:04] [Server thread/INFO] [FML]: Holder lookups applied
-[16:50:07] [main/INFO] [minecraft/Minecraft]: Stopping!
-[16:50:07] [main/INFO] [minecraft/SoundManager]: SoundSystem shutting down...
-[16:50:07] [main/WARN] [minecraft/SoundManager]: Author: Paul Lamb, www.paulscode.com
+[20:15:01] [main/FATAL] [minecraft/Minecraft]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
+	at net.minecraft.util.Util.runTask(Util.java:54) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1177) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:441) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_161]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_161]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:25) [start/:?]
+Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
+	at net.minecraft.client.network.NetHandlerPlayClient.handleEntityStatus(NetHandlerPlayClient.java:1117) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.SPacketEntityStatus.processPacket(SPacketEntityStatus.java:50) ~[SPacketEntityStatus.class:?]
+	at net.minecraft.network.play.server.SPacketEntityStatus.processPacket(SPacketEntityStatus.java:12) ~[SPacketEntityStatus.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(PacketThreadUtil.java:21) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_161]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
+	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
+	... 15 more
+[20:15:33] [main/FATAL] [minecraft/Minecraft]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
+	at net.minecraft.util.Util.runTask(Util.java:54) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1177) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:441) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_161]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_161]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:25) [start/:?]
+Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
+	at net.minecraft.client.network.NetHandlerPlayClient.handleEntityStatus(NetHandlerPlayClient.java:1117) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.SPacketEntityStatus.processPacket(SPacketEntityStatus.java:50) ~[SPacketEntityStatus.class:?]
+	at net.minecraft.network.play.server.SPacketEntityStatus.processPacket(SPacketEntityStatus.java:12) ~[SPacketEntityStatus.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(PacketThreadUtil.java:21) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_161]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
+	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
+	... 15 more
+[20:15:35] [main/FATAL] [minecraft/Minecraft]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
+	at net.minecraft.util.Util.runTask(Util.java:54) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1177) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:441) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_161]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_161]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:25) [start/:?]
+Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
+	at net.minecraft.client.network.NetHandlerPlayClient.handleEntityStatus(NetHandlerPlayClient.java:1117) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.SPacketEntityStatus.processPacket(SPacketEntityStatus.java:50) ~[SPacketEntityStatus.class:?]
+	at net.minecraft.network.play.server.SPacketEntityStatus.processPacket(SPacketEntityStatus.java:12) ~[SPacketEntityStatus.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(PacketThreadUtil.java:21) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_161]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
+	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
+	... 15 more
+[20:15:37] [main/FATAL] [minecraft/Minecraft]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
+	at net.minecraft.util.Util.runTask(Util.java:54) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1177) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:441) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_161]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_161]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:25) [start/:?]
+Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
+	at net.minecraft.client.network.NetHandlerPlayClient.handleEntityStatus(NetHandlerPlayClient.java:1117) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.SPacketEntityStatus.processPacket(SPacketEntityStatus.java:50) ~[SPacketEntityStatus.class:?]
+	at net.minecraft.network.play.server.SPacketEntityStatus.processPacket(SPacketEntityStatus.java:12) ~[SPacketEntityStatus.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(PacketThreadUtil.java:21) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_161]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
+	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
+	... 15 more
+[20:15:38] [main/FATAL] [minecraft/Minecraft]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_161]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_161]
+	at net.minecraft.util.Util.runTask(Util.java:54) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1177) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:441) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_161]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_161]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:25) [start/:?]
+Caused by: java.lang.ClassCastException: com.indiv.neilly.entity.EntityNui cannot be cast to net.minecraft.entity.monster.EntityGuardian
+	at net.minecraft.client.network.NetHandlerPlayClient.handleEntityStatus(NetHandlerPlayClient.java:1117) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.SPacketEntityStatus.processPacket(SPacketEntityStatus.java:50) ~[SPacketEntityStatus.class:?]
+	at net.minecraft.network.play.server.SPacketEntityStatus.processPacket(SPacketEntityStatus.java:12) ~[SPacketEntityStatus.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(PacketThreadUtil.java:21) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_161]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_161]
+	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
+	... 15 more
+[20:19:18] [Server thread/INFO] [minecraft/IntegratedServer]: Saving and pausing game...
+[20:19:18] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'New World'/overworld
+[20:20:59] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Did the system time change, or is the server overloaded? Running 22916ms behind, skipping 458 tick(s)
+[20:21:35] [Server thread/INFO] [minecraft/IntegratedServer]: Saving and pausing game...
+[20:21:35] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'New World'/overworld
+[20:21:37] [Server thread/INFO] [minecraft/MinecraftServer]: Stopping server
+[20:21:37] [Server thread/INFO] [minecraft/MinecraftServer]: Saving players
+[20:21:37] [Server thread/INFO] [minecraft/NetHandlerPlayServer]: Player333 lost connection: Disconnected
+[20:21:37] [Server thread/INFO] [minecraft/MinecraftServer]: Player333 left the game
+[20:21:37] [Server thread/INFO] [minecraft/NetHandlerPlayServer]: Stopping singleplayer server as player logged out
+[20:21:37] [Server thread/INFO] [minecraft/MinecraftServer]: Saving worlds
+[20:21:37] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'New World'/overworld
+[20:21:37] [Server thread/INFO] [FML]: Unloading dimension 0
+[20:21:37] [Server thread/INFO] [FML]: Applying holder lookups
+[20:21:37] [Server thread/INFO] [FML]: Holder lookups applied
+[20:21:38] [main/INFO] [minecraft/Minecraft]: Stopping!
+[20:21:38] [main/INFO] [minecraft/SoundManager]: SoundSystem shutting down...
+[20:21:38] [main/WARN] [minecraft/SoundManager]: Author: Paul Lamb, www.paulscode.com
 
 BUILD SUCCESSFUL
 
-Total time: 50 mins 47.444 secs
+Total time: 12 mins 11.853 secs

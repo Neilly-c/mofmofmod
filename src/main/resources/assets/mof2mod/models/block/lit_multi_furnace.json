@@ -1,0 +1,11 @@
+{
+  "parent": "block/oritenable",
+  "textures": {
+    "up": "mof2mod:blocks/multi_furnace_top",
+    "down": "mof2mod:blocks/machine",
+    "north": "mof2mod:blocks/multi_furnace_on",
+    "east": "mof2mod:blocks/machine_side",
+    "south": "mof2mod:blocks/machine_side",
+    "west": "mof2mod:blocks/machine_side"
+  }
+}

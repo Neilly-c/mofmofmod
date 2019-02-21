@@ -39,7 +39,8 @@ public class BlockInit {
 
     public static final Block MILL_CENTER = new BlockCenter("mill_center");
     public static final Block WATER_REMOVER = new BlockWaterRemover("water_remover");
-    public static final Block MULTI_FURNACE = new BlockMultiFurnace("multi_furnace");
+    public static final Block MULTI_FURNACE = new BlockMultiFurnace("multi_furnace", false);
+    public static final Block LIT_MULTI_FURNACE = new BlockMultiFurnace("lit_multi_furnace", true);
 
     public static void initTools(){
 

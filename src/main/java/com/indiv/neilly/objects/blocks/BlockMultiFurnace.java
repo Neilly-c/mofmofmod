@@ -8,11 +8,13 @@ import com.indiv.neilly.util.Reference;
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.properties.IProperty;
+import net.minecraft.block.properties.PropertyBool;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
 import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -29,14 +31,23 @@ import java.util.Random;
 
 public class BlockMultiFurnace extends BlockMachine implements ITileEntityProvider, IHasFacing {
     public static final PropertyDirection FACING = BlockHorizontal.FACING;
+    public static final PropertyBool POWERED = PropertyBool.create("powered");
+    private final boolean isBurning;
+    private static boolean keepInventory;
 
-    public BlockMultiFurnace(String name) {
+    public BlockMultiFurnace(String name, boolean isBurning) {
         super(name);
-        this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
+        this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(POWERED, false));
+        this.isBurning = isBurning;
     }
 
     public Item getItemDropped(IBlockState state, Random rand, int fortune) {
         return Item.getItemFromBlock(BlockInit.MULTI_FURNACE);
+    }
+
+    @Override
+    public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state) {
+        return new ItemStack(BlockInit.MULTI_FURNACE);
     }
 
     public void onBlockAdded(World worldIn, BlockPos pos, IBlockState state) {
@@ -84,6 +95,24 @@ public class BlockMultiFurnace extends BlockMachine implements ITileEntityProvid
         }
     }
 
+    public static void setState(boolean active, World worldIn, BlockPos pos) {
+        IBlockState iblockstate = worldIn.getBlockState(pos);
+        TileEntity tileentity = worldIn.getTileEntity(pos);
+        keepInventory = true;
+        /*if (active) {
+            worldIn.setBlockState(pos, BlockInit.LIT_MULTI_FURNACE.getDefaultState().withProperty(FACING, iblockstate.getValue(FACING)).withProperty(POWERED, true), 3);
+            worldIn.setBlockState(pos, BlockInit.LIT_MULTI_FURNACE.getDefaultState().withProperty(FACING, iblockstate.getValue(FACING)).withProperty(POWERED, true), 3);
+        } else {
+            worldIn.setBlockState(pos, BlockInit.MULTI_FURNACE.getDefaultState().withProperty(FACING, iblockstate.getValue(FACING)).withProperty(POWERED, false), 3);
+            worldIn.setBlockState(pos, BlockInit.MULTI_FURNACE.getDefaultState().withProperty(FACING, iblockstate.getValue(FACING)).withProperty(POWERED, false), 3);
+        }*/
+        keepInventory = false;
+        if (tileentity != null) {
+            tileentity.validate();
+            worldIn.setTileEntity(pos, tileentity);
+        }
+    }
+
     @Override
     public IBlockState getStateFromMeta(int meta) {
         EnumFacing enumfacing = EnumFacing.getFront(meta);
@@ -101,7 +130,7 @@ public class BlockMultiFurnace extends BlockMachine implements ITileEntityProvid
 
     public BlockStateContainer createBlockState()
     {
-        return new BlockStateContainer(this, new IProperty[] {FACING});
+        return new BlockStateContainer(this, new IProperty[] {FACING, POWERED});
     }
 
     @Nullable
@@ -125,12 +154,13 @@ public class BlockMultiFurnace extends BlockMachine implements ITileEntityProvid
             }
         }
     }
-
     public void breakBlock(World worldIn, BlockPos pos, IBlockState state) {
-        TileEntity tileentity = worldIn.getTileEntity(pos);
-        if (tileentity instanceof TileEntityMultiFurnace) {
-            InventoryHelper.dropInventoryItems(worldIn, pos, (TileEntityMultiFurnace)tileentity);
-            worldIn.updateComparatorOutputLevel(pos, this);
+        if(!keepInventory) {
+            TileEntity tileentity = worldIn.getTileEntity(pos);
+            if (tileentity instanceof TileEntityMultiFurnace) {
+                InventoryHelper.dropInventoryItems(worldIn, pos, (TileEntityMultiFurnace) tileentity);
+                worldIn.updateComparatorOutputLevel(pos, this);
+            }
         }
         super.breakBlock(worldIn, pos, state);
     }

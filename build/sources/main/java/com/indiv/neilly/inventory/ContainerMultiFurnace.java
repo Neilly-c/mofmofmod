@@ -11,10 +11,8 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ContainerMultiFurnace extends Container {
     private final IInventory tileMultiFurnace;
-    private int cookTime;
-    private int totalCookTime;
-    private int furnaceBurnTime;
-    private int currentItemBurnTime;
+    private int furnaceBurnTime, currentItemBurnTime, cookTime, totalCookTime, pulverizerActiveTime, currentItemActiveTime, crushTime, totalCrushTime;
+
 
     public ContainerMultiFurnace(InventoryPlayer playerInventory, IInventory furnaceInventory) {
         this.tileMultiFurnace = furnaceInventory;
@@ -57,12 +55,30 @@ public class ContainerMultiFurnace extends Container {
             if (this.totalCookTime != this.tileMultiFurnace.getField(3)) {
                 icontainerlistener.sendWindowProperty(this, 3, this.tileMultiFurnace.getField(3));
             }
+
+            if (this.crushTime != this.tileMultiFurnace.getField(6)) {
+                icontainerlistener.sendWindowProperty(this, 6, this.tileMultiFurnace.getField(6));
+            }
+            if (this.pulverizerActiveTime != this.tileMultiFurnace.getField(4)) {
+                icontainerlistener.sendWindowProperty(this, 4, this.tileMultiFurnace.getField(4));
+            }
+            if (this.currentItemActiveTime != this.tileMultiFurnace.getField(5)) {
+                icontainerlistener.sendWindowProperty(this, 5, this.tileMultiFurnace.getField(5));
+            }
+            if (this.totalCrushTime != this.tileMultiFurnace.getField(7)) {
+                icontainerlistener.sendWindowProperty(this, 7, this.tileMultiFurnace.getField(7));
+            }
         }
 
         this.cookTime = this.tileMultiFurnace.getField(2);
         this.furnaceBurnTime = this.tileMultiFurnace.getField(0);
         this.currentItemBurnTime = this.tileMultiFurnace.getField(1);
         this.totalCookTime = this.tileMultiFurnace.getField(3);
+
+        this.crushTime = this.tileMultiFurnace.getField(6);
+        this.pulverizerActiveTime = this.tileMultiFurnace.getField(4);
+        this.currentItemActiveTime = this.tileMultiFurnace.getField(5);
+        this.totalCrushTime = this.tileMultiFurnace.getField(7);
     }
 
     @SideOnly(Side.CLIENT)

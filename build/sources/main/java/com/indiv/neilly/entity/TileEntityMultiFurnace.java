@@ -1,6 +1,8 @@
 package com.indiv.neilly.entity;
 
 import com.indiv.neilly.inventory.ContainerMultiFurnace;
+import com.indiv.neilly.objects.blocks.BlockMultiFurnace;
+import com.indiv.neilly.objects.items.recipe.CrushRecipes;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.init.Blocks;
@@ -26,10 +28,7 @@ public class TileEntityMultiFurnace extends TileEntityLockable implements ITicka
     private static final int[] SLOTS_BOTTOM = new int[] {1, 2};
     private static final int[] SLOTS_SIDES = new int[] {3};
     private NonNullList<ItemStack> furnaceItemStacks = NonNullList.withSize(4, ItemStack.EMPTY);
-    private int furnaceBurnTime;
-    private int currentItemBurnTime;
-    private int cookTime;
-    private int totalCookTime;
+    private int furnaceBurnTime, currentItemBurnTime, cookTime, totalCookTime, pulverizerActiveTime, currentItemActiveTime, crushTime, totalCrushTime;
     private String furnaceCustomName;
 
     public void readFromNBT(NBTTagCompound compound) {
@@ -40,9 +39,17 @@ public class TileEntityMultiFurnace extends TileEntityLockable implements ITicka
         this.cookTime = compound.getInteger("CookTime");
         this.totalCookTime = compound.getInteger("CookTimeTotal");
         this.currentItemBurnTime = getItemBurnTime(this.furnaceItemStacks.get(1));
+        this.pulverizerActiveTime = compound.getInteger("ActiveTime");
+        this.crushTime = compound.getInteger("CrushTime");
+        this.totalCrushTime = compound.getInteger("CrushTimeTotal");
+        this.currentItemActiveTime = getItemActiveTime(this.furnaceItemStacks.get(0));
         if (compound.hasKey("CustomName", 8)) {
             this.furnaceCustomName = compound.getString("CustomName");
         }
+    }
+
+    private int getItemActiveTime(ItemStack itemStack) {
+        return getItemBurnTime(itemStack);
     }
 
     public NBTTagCompound writeToNBT(NBTTagCompound compound) {
@@ -50,6 +57,9 @@ public class TileEntityMultiFurnace extends TileEntityLockable implements ITicka
         compound.setInteger("BurnTime", (short)this.furnaceBurnTime);
         compound.setInteger("CookTime", (short)this.cookTime);
         compound.setInteger("CookTimeTotal", (short)this.totalCookTime);
+        compound.setInteger("ActiveTime", (short)this.pulverizerActiveTime);
+        compound.setInteger("CrushTime", (short)this.crushTime);
+        compound.setInteger("CrushTimeTotal", (short)this.totalCrushTime);
         ItemStackHelper.saveAllItems(compound, this.furnaceItemStacks);
         if (this.hasCustomName()) {
             compound.setString("CustomName", this.furnaceCustomName);
@@ -59,6 +69,32 @@ public class TileEntityMultiFurnace extends TileEntityLockable implements ITicka
 
     public int getCookTime(ItemStack stack) {
         return 200;
+    }
+
+    public int getCrushTime(ItemStack stack) {
+        return 200;
+    }
+
+    public boolean isBurning()
+    {
+        return this.furnaceBurnTime > 0;
+    }
+
+    @SideOnly(Side.CLIENT)
+    public static boolean isBurning(IInventory inventory)
+    {
+        return inventory.getField(0) > 0;
+    }
+
+    public boolean isActive()
+    {
+        return this.pulverizerActiveTime > 0;
+    }
+
+    @SideOnly(Side.CLIENT)
+    public static boolean isActive(IInventory inventory)
+    {
+        return inventory.getField(4) > 0;
     }
 
     @Override
@@ -122,9 +158,15 @@ public class TileEntityMultiFurnace extends TileEntityLockable implements ITicka
             stack.setCount(this.getInventoryStackLimit());
         }
 
-        if (index == 0 && !flag) {
+        if (index == 1 && !flag) {
             this.totalCookTime = this.getCookTime(stack);
             this.cookTime = 0;
+            this.markDirty();
+        }
+
+        if (index == 0 && !flag) {
+            this.totalCrushTime = this.getCrushTime(stack);
+            this.crushTime = 0;
             this.markDirty();
         }
     }
@@ -163,7 +205,7 @@ public class TileEntityMultiFurnace extends TileEntityLockable implements ITicka
             case 2:
                 return false;
             case 3:
-                ItemStack itemstack = this.furnaceItemStacks.get(1);
+                ItemStack itemstack = this.furnaceItemStacks.get(3);
                 return isItemFuel(stack) || SlotFurnaceFuel.isBucket(stack) && itemstack.getItem() != Items.BUCKET;
         }
         return false;
@@ -180,6 +222,14 @@ public class TileEntityMultiFurnace extends TileEntityLockable implements ITicka
                 return this.cookTime;
             case 3:
                 return this.totalCookTime;
+            case 4:
+                return this.pulverizerActiveTime;
+            case 5:
+                return this.currentItemActiveTime;
+            case 6:
+                return this.crushTime;
+            case 7:
+                return this.totalCrushTime;
             default:
                 return 0;
         }
@@ -199,12 +249,25 @@ public class TileEntityMultiFurnace extends TileEntityLockable implements ITicka
                 break;
             case 3:
                 this.totalCookTime = value;
+                break;
+            case 4:
+                this.pulverizerActiveTime = value;
+                break;
+            case 5:
+                this.currentItemActiveTime = value;
+                break;
+            case 6:
+                this.crushTime = value;
+                break;
+            case 7:
+                this.totalCrushTime = value;
+
         }
     }
 
     @Override
     public int getFieldCount() {
-        return 4;
+        return 8;
     }
 
     @Override
@@ -212,34 +275,26 @@ public class TileEntityMultiFurnace extends TileEntityLockable implements ITicka
         this.furnaceItemStacks.clear();
     }
 
-    public boolean isBurning()
-    {
-        return this.furnaceBurnTime > 0;
-    }
-
-    @SideOnly(Side.CLIENT)
-    public static boolean isBurning(IInventory inventory)
-    {
-        return inventory.getField(0) > 0;
-    }
-
     @Override
     public void update() {
-        boolean flag = this.isBurning();
-        boolean flag1 = false;
-        if (this.isBurning()) {
+        boolean flagA = this.isFurnaceBurning(), flagB = this.isPulverizerCrushing();
+        boolean flag1 = false, flag2 = false;
+        if (this.isFurnaceBurning()) {
             this.furnaceBurnTime--;
+        }
+        if(this.isPulverizerCrushing()){
+            this.pulverizerActiveTime--;
         }
 
         if (!this.world.isRemote) {
             ItemStack fuelStack = this.furnaceItemStacks.get(3);
 
-            if (this.isBurning() || !fuelStack.isEmpty() && !(this.furnaceItemStacks.get(1)).isEmpty()) {
-                if (!this.isBurning() && this.canSmelt()) {
+            if (this.isFurnaceBurning() || !fuelStack.isEmpty() && !(this.furnaceItemStacks.get(1)).isEmpty()) {
+                if (!this.isFurnaceBurning() && this.canSmelt()) {
                     this.furnaceBurnTime = getItemBurnTime(fuelStack);
                     this.currentItemBurnTime = this.furnaceBurnTime;
 
-                    if (this.isBurning()) {
+                    if (this.isFurnaceBurning()) {
                         flag1 = true;
 
                         if (!fuelStack.isEmpty()) {
@@ -254,31 +309,89 @@ public class TileEntityMultiFurnace extends TileEntityLockable implements ITicka
                     }
                 }
 
-                if (this.isBurning() && this.canSmelt()) {
+                if (this.isFurnaceBurning() && this.canSmelt()) {
                     this.cookTime++;
 
                     if (this.cookTime == this.totalCookTime) {
                         this.cookTime = 0;
-                        this.totalCookTime = this.getCookTime(this.furnaceItemStacks.get(0));
+                        this.totalCookTime = this.getCookTime(this.furnaceItemStacks.get(1));
                         this.smeltItem();
                         flag1 = true;
                     }
                 } else {
                     this.cookTime = 0;
                 }
-            } else if (!this.isBurning() && this.cookTime > 0) {
+            } else if (!this.isFurnaceBurning() && this.cookTime > 0) {
                 this.cookTime = MathHelper.clamp(this.cookTime - 2, 0, this.totalCookTime);
             }
 
-            if (flag != this.isBurning()) {
+            if (this.isPulverizerCrushing() || !fuelStack.isEmpty() && !(this.furnaceItemStacks.get(0)).isEmpty()) {
+                if (!this.isPulverizerCrushing() && this.canCrush()) {
+                    this.pulverizerActiveTime = getItemBurnTime(fuelStack);
+                    this.currentItemActiveTime = this.pulverizerActiveTime;
+
+                    if (this.isPulverizerCrushing()) {
+                        flag2 = true;
+
+                        if (!fuelStack.isEmpty()) {
+                            Item item = fuelStack.getItem();
+                            fuelStack.shrink(1);
+
+                            if (fuelStack.isEmpty()) {
+                                ItemStack item1 = item.getContainerItem(fuelStack);
+                                this.furnaceItemStacks.set(1, item1);
+                            }
+                        }
+                    }
+                }
+
+                if (this.isPulverizerCrushing() && this.canCrush()) {
+                    this.crushTime++;
+
+                    if (this.crushTime == this.totalCrushTime) {
+                        this.crushTime = 0;
+                        this.totalCrushTime = this.getCrushTime(this.furnaceItemStacks.get(0));
+                        this.crushItem();
+                        flag2 = true;
+                    }
+                } else {
+                    this.crushTime = 0;
+                }
+            } else if (!this.isPulverizerCrushing() && this.crushTime > 0) {
+                this.crushTime = MathHelper.clamp(this.crushTime - 2, 0, this.totalCrushTime);
+            }
+
+            if (flagA != this.isFurnaceBurning()) {
                 flag1 = true;
-                //BlockMultiFurnace.setState(this.isBurning(), this.world, this.pos);
+                BlockMultiFurnace.setState(this.isFurnaceBurning(), this.world, this.pos);
+            }
+            if (flagB != this.isPulverizerCrushing()) {
+                flag2 = true;
+                BlockMultiFurnace.setState(this.isPulverizerCrushing(), this.world, this.pos);
             }
         }
 
-        if (flag1) {
+        if (flag1 || flag2) {
             this.markDirty();
         }
+    }
+
+    public boolean isFurnaceBurning() {
+        return this.furnaceBurnTime > 0;
+    }
+
+    @SideOnly(Side.CLIENT)
+    public static boolean isFurnaceBurning(IInventory inventory) {
+        return inventory.getField(0) > 0;
+    }
+
+    private boolean isPulverizerCrushing() {
+        return this.pulverizerActiveTime > 0;
+    }
+
+    @SideOnly(Side.CLIENT)
+    public static boolean isPulverizerCrushing(IInventory inventory){
+        return inventory.getField(4) > 0;
     }
 
     private boolean canSmelt() {
@@ -304,6 +417,29 @@ public class TileEntityMultiFurnace extends TileEntityLockable implements ITicka
         }
     }
 
+    private boolean canCrush() {
+        if((this.furnaceItemStacks.get(0)).isEmpty()){
+            return false;
+        }else{
+            ItemStack itemToCrush = CrushRecipes.instance().getCrushingResult(this.furnaceItemStacks.get(0));
+
+            if(itemToCrush.isEmpty()){
+                return false;
+            }else{
+                ItemStack itemCrushRes = this.furnaceItemStacks.get(1);
+                if(itemCrushRes.isEmpty()){
+                    return true;
+                }else if(!itemCrushRes.isItemEqual(itemToCrush)){
+                    return false;
+                }else if(itemCrushRes.getCount() + itemToCrush.getCount() <= this.getInventoryStackLimit() && itemCrushRes.getCount() + itemToCrush.getCount() <= itemCrushRes.getMaxStackSize()){
+                    return true;
+                }else{
+                    return itemCrushRes.getCount() + itemToCrush.getCount() <= itemCrushRes.getMaxStackSize();
+                }
+            }
+        }
+    }
+
     public void smeltItem() {
         if (this.canSmelt()) {
             ItemStack itemToSmelt = this.furnaceItemStacks.get(1);
@@ -321,6 +457,22 @@ public class TileEntityMultiFurnace extends TileEntityLockable implements ITicka
             }
 
             itemToSmelt.shrink(1);
+        }
+    }
+
+    private void crushItem() {
+        if(this.canCrush()){
+            ItemStack itemToCrush = this.furnaceItemStacks.get(0);
+            ItemStack itemstack1 = CrushRecipes.instance().getCrushingResult(itemToCrush);
+            ItemStack itemCrushRes = this.furnaceItemStacks.get(1);
+
+            if (itemCrushRes.isEmpty()) {
+                this.furnaceItemStacks.set(1, itemstack1.copy());
+            }else if(itemCrushRes.getItem() == itemstack1.getItem()){
+                itemCrushRes.grow(itemstack1.getCount());
+            }
+            
+            itemToCrush.shrink(1);
         }
     }
 
