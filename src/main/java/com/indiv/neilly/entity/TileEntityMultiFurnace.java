@@ -298,13 +298,7 @@ public class TileEntityMultiFurnace extends TileEntityLockable implements ITicka
                         flag1 = true;
 
                         if (!fuelStack.isEmpty()) {
-                            Item item = fuelStack.getItem();
                             fuelStack.shrink(1);
-
-                            if (fuelStack.isEmpty()) {
-                                ItemStack item1 = item.getContainerItem(fuelStack);
-                                this.furnaceItemStacks.set(1, item1);
-                            }
                         }
                     }
                 }
@@ -334,13 +328,7 @@ public class TileEntityMultiFurnace extends TileEntityLockable implements ITicka
                         flag2 = true;
 
                         if (!fuelStack.isEmpty()) {
-                            Item item = fuelStack.getItem();
                             fuelStack.shrink(1);
-
-                            if (fuelStack.isEmpty()) {
-                                ItemStack item1 = item.getContainerItem(fuelStack);
-                                this.furnaceItemStacks.set(1, item1);
-                            }
                         }
                     }
                 }
@@ -468,6 +456,7 @@ public class TileEntityMultiFurnace extends TileEntityLockable implements ITicka
 
             if (itemCrushRes.isEmpty()) {
                 this.furnaceItemStacks.set(1, itemstack1.copy());
+                this.totalCookTime = this.getCookTime(itemstack1);
             }else if(itemCrushRes.getItem() == itemstack1.getItem()){
                 itemCrushRes.grow(itemstack1.getCount());
             }

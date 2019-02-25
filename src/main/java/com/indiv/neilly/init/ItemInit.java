@@ -25,6 +25,7 @@ public class ItemInit {
 
     public static final Item BREAKER_IRON = new ToolBreaker("breaker_iron", ToolMaterial.IRON);
     public static final Item PLACER = new ToolPlacer("placer");
+    public static final Item REPLACER = new ToolReplacer("replacer");
 
     public static final ToolMaterial TOOL_COPPER = EnumHelper.addToolMaterial("tool_copper",1, 180, 5.0F, 1.5F, 18);
     public static final ArmorMaterial ARMOR_COPPER = EnumHelper.addArmorMaterial("armor_copper", Reference.MODID + ":copper", 12, new int[]{1, 4, 5, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
@@ -52,6 +53,18 @@ public class ItemInit {
     public static final Item INGOT_BRONZE = new ItemBase("ingot_bronze");
     public static final Item INGOT_STEEL = new ItemBase("ingot_steel");
     public static final Item INGOT_PLATINUM = new ItemBase("ingot_platinum");
+
+    public static final Item DUST_IRON = new ItemBase("dust_iron");
+    public static final Item DUST_GOLD = new ItemBase("dust_gold");
+    public static final Item DUST_COPPER = new ItemBase("dust_copper");
+    public static final Item DUST_TIN = new ItemBase("dust_tin");
+    public static final Item DUST_ALUMINIUM = new ItemBase("dust_aluminium");
+    public static final Item DUST_LEAD = new ItemBase("dust_lead");
+    public static final Item DUST_SILVER = new ItemBase("dust_silver");
+    public static final Item DUST_IRIDIUM = new ItemBase("dust_iridium");
+    public static final Item DUST_PLATINUM = new ItemBase("dust_platinum");
+    public static final Item DUST_BRONZE = new ItemBase("dust_bronze");
+    public static final Item DUST_STEEL = new ItemBase("dust_steel");
 
     public static final Item AXE_COPPER = new ToolAxe("axe_copper", TOOL_COPPER);
     public static final Item HOE_COPPER = new ToolHoe("hoe_copper", TOOL_COPPER);

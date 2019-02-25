@@ -15,6 +15,7 @@ item.ingot_steel.name=Steel Ingot
 
 item.breaker_iron.name=Iron Breaker
 item.placer.name=Block Placer
+item.replacer.name=Block Replacer
 
 item.axe_copper.name=Copper Axe
 item.hoe_copper.name=Copper Hoe

@@ -99,13 +99,13 @@ public class BlockMultiFurnace extends BlockMachine implements ITileEntityProvid
         IBlockState iblockstate = worldIn.getBlockState(pos);
         TileEntity tileentity = worldIn.getTileEntity(pos);
         keepInventory = true;
-        /*if (active) {
+        if (active) {
             worldIn.setBlockState(pos, BlockInit.LIT_MULTI_FURNACE.getDefaultState().withProperty(FACING, iblockstate.getValue(FACING)).withProperty(POWERED, true), 3);
             worldIn.setBlockState(pos, BlockInit.LIT_MULTI_FURNACE.getDefaultState().withProperty(FACING, iblockstate.getValue(FACING)).withProperty(POWERED, true), 3);
         } else {
             worldIn.setBlockState(pos, BlockInit.MULTI_FURNACE.getDefaultState().withProperty(FACING, iblockstate.getValue(FACING)).withProperty(POWERED, false), 3);
             worldIn.setBlockState(pos, BlockInit.MULTI_FURNACE.getDefaultState().withProperty(FACING, iblockstate.getValue(FACING)).withProperty(POWERED, false), 3);
-        }*/
+        }
         keepInventory = false;
         if (tileentity != null) {
             tileentity.validate();

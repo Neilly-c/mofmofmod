@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=north,powered=false": {
+      "model": "mof2mod:multi_furnace"
+    },
+    "facing=east,powered=false": {
+      "model": "mof2mod:multi_furnace", "y": 90
+    },
+    "facing=south,powered=false": {
+      "model": "mof2mod:multi_furnace", "y": 180
+    },
+    "facing=west,powered=false": {
+      "model": "mof2mod:multi_furnace", "y": 270
+    },
+    "facing=north,powered=true": {
+      "model": "mof2mod:lit_multi_furnace"
+    },
+    "facing=east,powered=true": {
+      "model": "mof2mod:lit_multi_furnace", "y": 90
+    },
+    "facing=south,powered=true": {
+      "model": "mof2mod:lit_multi_furnace", "y": 180
+    },
+    "facing=west,powered=true": {
+      "model": "mof2mod:lit_multi_furnace", "y": 270
+    }
+  }
+}

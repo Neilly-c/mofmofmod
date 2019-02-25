@@ -1,6 +1,7 @@
 package com.indiv.neilly.objects.items.recipe;
 
 import com.google.common.collect.Maps;
+import com.indiv.neilly.init.BlockInit;
 import com.indiv.neilly.init.ItemInit;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
@@ -20,9 +21,21 @@ public class CrushRecipes {
     }
 
     private CrushRecipes(){
-        //this.addCrushingRecipeForBlock(Blocks.IRON_ORE, new ItemStack(ItemInit.IRON_DUST), 0.7F);
-        //this.addCrushingRecipeForBlock(Blocks.GOLD_ORE, new ItemStack(ItemInit.GOLD_DUST), 1.0F);
+        this.addCrushingRecipeForBlock(Blocks.IRON_ORE, new ItemStack(ItemInit.DUST_IRON, 2), 0.1F);
+        this.addCrushingRecipeForBlock(Blocks.GOLD_ORE, new ItemStack(ItemInit.DUST_GOLD, 2), 0.2F);
+        this.addCrushingRecipeForBlock(BlockInit.ORE_COPPER, new ItemStack(ItemInit.DUST_COPPER, 2), 0.1F);
+        this.addCrushingRecipeForBlock(BlockInit.ORE_TIN, new ItemStack(ItemInit.DUST_TIN, 2), 0.1F);
+        this.addCrushingRecipeForBlock(BlockInit.ORE_ALUMINIUM, new ItemStack(ItemInit.DUST_ALUMINIUM, 2), 0.1F);
+        this.addCrushingRecipeForBlock(BlockInit.ORE_LEAD, new ItemStack(ItemInit.DUST_LEAD, 2), 0.1F);
+        this.addCrushingRecipeForBlock(BlockInit.ORE_SILVER, new ItemStack(ItemInit.DUST_SILVER, 2), 0.2F);
+        this.addCrushingRecipeForBlock(BlockInit.ORE_IRIDIUM, new ItemStack(ItemInit.DUST_IRIDIUM, 2), 0.3F);
+        this.addCrushingRecipeForBlock(BlockInit.ORE_PLATINUM, new ItemStack(ItemInit.DUST_PLATINUM, 2), 0.3F);
         this.addCrushingRecipeForBlock(Blocks.STONE, new ItemStack(Blocks.SAND, 1), 0.1F);
+        this.addCrushingRecipeForBlock(Blocks.COBBLESTONE, new ItemStack(Blocks.SAND, 1), 0.1F);
+        this.addCrushingRecipeForBlock(Blocks.SANDSTONE, new ItemStack(Blocks.SAND, 1), 0);
+        this.addCrushingRecipeForBlock(Blocks.WOOL, new ItemStack(Items.STRING, 3), 0);
+        this.addCrushingRecipeForBlock(Blocks.REDSTONE_ORE, new ItemStack(Items.REDSTONE, 6), 0.3F);
+        this.addCrushingRecipeForBlock(Blocks.LAPIS_ORE, new ItemStack(Items.DYE, 8, 4), 0.3F);
     }
 
     public void addCrushingRecipeForBlock(Block input, ItemStack stack, float experience) {
